@@ -79,9 +79,11 @@ class GenderPicker extends StatelessWidget {
           ),
           child: Column(
             children: [
+              // "auto": the style a new account with this username gets.
               Avatar(
                 key: ValueKey('$seed|$gender'),
                 seed: seed,
+                style: 'auto',
                 gender: gender,
                 size: 64,
               ),
