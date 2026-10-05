@@ -1,0 +1,7 @@
+{
+  "mobile": {
+    "networkError": "Internetga ulanib boʻlmadi. Aloqani tekshirib, qayta urinib koʻring.",
+    "serverError": "Xatolik yuz berdi. Birozdan soʻng qayta urinib koʻring.",
+    "comingSoon": "Bu boʻlim tez orada ilovada paydo boʻladi."
+  }
+}

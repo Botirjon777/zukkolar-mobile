@@ -1,0 +1,1825 @@
+{
+  "meta": {
+    "title": "Zukkolar — Bilim va dasturlashni oʻyin orqali oʻrganing",
+    "description": "Zukkolar platformasida dasturlash va turli bilimlarni qiziqarli oʻyinlar yordamida oson oʻzlashtiring. Interaktiv taʼlim, reytinglar va musobaqalarda qatnashing.",
+    "keywords": "dasturlashni oʻrganish, dasturlash kurslari, HTML, CSS, JavaScript, TypeScript, React, Python, oʻzbek tilida dasturlash, onlayn mashqlar, IQ test, Zukkolar",
+    "loginTitle": "Kirish",
+    "loginDescription": "Zukkolar hisobingizga kiring va mashqlarni davom ettiring.",
+    "registerTitle": "Roʻyxatdan oʻtish",
+    "registerDescription": "Zukkolar'da bepul hisob oching: dasturlashni qisqa mashqlar, XP va duellar bilan oʻrganing."
+  },
+  "nav": {
+    "login": "Kirish",
+    "register": "Roʻyxatdan oʻtish",
+    "dashboard": "Bosh sahifa",
+    "leaderboard": "Reyting",
+    "profile": "Profil",
+    "devices": "Qurilmalar",
+    "logout": "Chiqish",
+    "learn": "Oʻrganish",
+    "friends": "Doʻstlar",
+    "clans": "Klanlar",
+    "notifications": "Bildirishnomalar",
+    "settings": "Sozlamalar",
+    "plans": "Tariflar",
+    "more": "Yana",
+    "admin": "Admin panel",
+    "profileMenu": "Profil menyusi",
+    "close": "Yopish",
+    "levelXp": "{level}-daraja · {xp} XP",
+    "freePlan": "Free — bepul tarif",
+    "planUntil": "{date}gacha",
+    "planActive": "Faol",
+    "logoutConfirmTitle": "Hisobdan chiqasizmi?",
+    "logoutConfirmText": "Qayta kirish uchun telefon raqamingiz (yoki foydalanuvchi nomingiz) va parolingiz kerak boʻladi.",
+    "cancel": "Bekor qilish",
+    "loggingOut": "Chiqilmoqda…",
+    "badges": "Nishonlar",
+    "invite": "Doʻstni taklif qilish",
+    "chat": "Xabarlar",
+    "duels": "Duellar"
+  },
+  "landing": {
+    "badge": "Dasturlash mashgʻulotlari — oʻyin shaklida",
+    "title": "Aynan qiynalayotgan mavzuingizni mashq qiling",
+    "subtitle": "Faqat oʻzingizga kerakli mavzuni tanlang va toʻliq oʻzlashtirguningizcha mashq qiling. Har bir toʻgʻri javob — XP, har kungi mashq — streak.",
+    "cta": "Bepul boshlash",
+    "ctaSecondary": "Menda akkaunt bor",
+    "howTitle": "Qanday ishlaydi",
+    "steps": {
+      "pick": {
+        "title": "Mavzuni tanlang",
+        "text": "HTML, CSS, JS, TS, React — kerakli mavzuni bitta bosishda oching."
+      },
+      "drill": {
+        "title": "Mashq qiling",
+        "text": "Test, natijani topish, kodni toʻldirish va tartiblash. Qiyinlik darajangizga moslashadi."
+      },
+      "earn": {
+        "title": "XP toʻplang",
+        "text": "Har bir toʻgʻri javob, kunlik bonus, streak va IQ testlar uchun XP."
+      },
+      "climb": {
+        "title": "Reytingda koʻtariling",
+        "text": "Haftalik va mavsumiy reyting, duellar va doʻstlar bilan musobaqa."
+      }
+    },
+    "tracksTitle": "Fanlar, yoʻnalishlar va kurslar",
+    "centersTitle": "Jamoaviy oʻrganish va musobaqalar",
+    "centersText": "Oʻzingiz mustaqil shugʻullaning, doʻstlar bilan bellashing, klanlararo musobaqalarda qatnashing va bilimlaringiz reytingini oshiring!",
+    "centersCta": "Bogʻlanish",
+    "aimTitle": "Maqsadimiz",
+    "aimText": "Oʻzbekistondagi har bir oʻquvchi dasturlashni zerikmasdan, har kuni ozgina va aniq maqsad bilan mashq qilsin.",
+    "features": {
+      "iq": {
+        "title": "Zukko IQ",
+        "text": "Mantiqiy fikrlash testlari, kunlik IQ savollar va IQ reytingi.",
+        "cta": "Roʻyxatdan oʻtmasdan IQ test"
+      },
+      "friends": {
+        "title": "Doʻstlar",
+        "text": "Doʻstlaringizni qoʻshing, taklif qiling va haftalik XP boʻyicha bellashing."
+      },
+      "clans": {
+        "title": "Klanlar",
+        "text": "Jamoa tuzing, har hafta boshqa klanlar bilan musobaqalashing va mukofot oling."
+      },
+      "badges": {
+        "title": "Nishonlar va darajalar",
+        "text": "Streak, daraja va yutuqlar uchun nishonlar. 10-darajada profil rasmi ochiladi."
+      }
+    },
+    "nav": {
+      "iq": "IQ test",
+      "how": "Qanday ishlaydi",
+      "directions": "Yoʻnalishlar",
+      "game": "Musobaqa",
+      "plans": "Tariflar",
+      "faq": "Savollar"
+    },
+    "trust": [
+      "Boshlash bepul",
+      "Karta kerak emas",
+      "Telefonda ham ishlaydi"
+    ],
+    "stats": {
+      "exercises": "mashq",
+      "courses": "kurs",
+      "skills": "mavzu",
+      "types": "xil mashq turi",
+      "typesHint": "test, natijani topish, kodni toʻldirish, tartiblash"
+    },
+    "tracksText": "Yoʻnalishni tanlang, kursni oching va faqat oʻzingizga kerakli mavzuni mashq qiling.",
+    "courseStats": "{skills} ta mavzu · {exercises} ta mashq",
+    "comingSoon": "Tez orada",
+    "gameTitle": "Oʻrganish — oʻyin kabi",
+    "gameText": "Yolgʻiz oʻqish zerikarli. Bu yerda har bir mashq — ochko, har hafta — yangi musobaqa.",
+    "game": {
+      "duel": {
+        "title": "1 ga 1 duellar",
+        "text": "Doʻstingizni chaqiring: ikkalangizga bir xil 5 ta savol. Koʻp va tez topgan yutadi — XP gʻolibga oʻtadi.",
+        "win": "Gʻalaba",
+        "lose": "Magʻlubiyat",
+        "you": "Siz",
+        "rival": "Raqib"
+      },
+      "season": {
+        "title": "Mavsumlar",
+        "text": "Har 1–3 oyda yangi mavsum: reyting noldan boshlanadi, hamma uchun imkoniyat teng.",
+        "label": "{number}-mavsum",
+        "left": "{days} kun qoldi"
+      },
+      "weekly": {
+        "title": "Haftalik ikki baravar XP",
+        "text": "Har hafta bitta kurs bonusli: mashqlari uchun XP ikki baravar, kursni tugatsangiz 100 oʻrniga 200 XP.",
+        "badge": "Shu hafta: {track}"
+      },
+      "streak": {
+        "title": "Kunlik bonus va streak",
+        "text": "Har kuni kirganingiz uchun XP. Ketma-ket 7 kun — eng katta bonus.",
+        "day": "{n}-kun"
+      }
+    },
+    "plansTitle": "Tariflar",
+    "plansText": "Barcha kurslar bepul. Pro va Diamond tezroq oʻsish uchun.",
+    "plansFrom": "oyiga",
+    "plansAnnual": "Yillik toʻlovda −{percent}%",
+    "plansCta": "Bepul boshlash",
+    "faqTitle": "Koʻp beriladigan savollar",
+    "faq": [
+      {
+        "q": "Zukkolar bepulmi?",
+        "a": "Ha. Barcha kurslar va mashqlar bepul. Pro va Diamond tariflari faqat XP ni tezroq toʻplash, kunlik limitni oshirish va qoʻshimcha avatar uslublari uchun."
+      },
+      {
+        "q": "Dasturlashni umuman bilmasam ham boʻladimi?",
+        "a": "Boʻladi. HTML asoslaridan boshlang: mashqlar osondan qiyinga qarab boradi va darajangizga moslashadi. Har bir javobdan soʻng qisqa tushuntirish beriladi."
+      },
+      {
+        "q": "Qaysi yoʻnalishlar bor?",
+        "a": "Frontend (HTML, CSS, JavaScript, TypeScript, React), Backend (Python, C#, C++) va kiberxavfsizlik. Linux va tarmoqlar boʻyicha kurslar, shuningdek matematika, geometriya, fizika, kimyo, biologiya va shaxmat boʻyicha mashqlar tayyorlanmoqda."
+      },
+      {
+        "q": "XP, daraja va streak nima?",
+        "a": "Har bir toʻgʻri javob XP beradi, XP toʻplangan sari darajangiz oshadi. Streak — ketma-ket mashq qilgan kunlaringiz soni: u uzilmasa, kunlik bonus kattalashadi."
+      },
+      {
+        "q": "Duel qanday ishlaydi?",
+        "a": "Raqib va mavzuni tanlaysiz, XP tikasiz. Ikkalangiz ham bir xil 5 ta savolga javob berasiz — istalgan vaqtda, 48 soat ichida. Koʻproq toʻgʻri javob bergan (teng boʻlsa — tezroq javob bergan) tikilgan XP ni oladi."
+      },
+      {
+        "q": "Telefonda ishlaydimi?",
+        "a": "Ha. Sayt telefon, planshet va kompyuter brauzerida ishlaydi — ilova oʻrnatish shart emas."
+      },
+      {
+        "q": "Oʻquv markazim uchun ishlatsam boʻladimi?",
+        "a": "Ha. Markazingiz uchun alohida manzil (markaz.zukkolar.uz), oʻz nomingiz va ranglaringiz, oʻquvchilaringiz reytingi va klanlararo musobaqalar ochib beramiz. Biz bilan bogʻlaning."
+      }
+    ],
+    "finalTitle": "Bugun birinchi mashqni yeching",
+    "finalText": "Roʻyxatdan oʻtish bir daqiqa. Birinchi toʻgʻri javobingiz uchun XP va birinchi nishon kutmoqda.",
+    "footer": {
+      "about": "Dasturlashni har kuni ozgina, aniq maqsad bilan va zerikmasdan oʻrganish uchun.",
+      "platform": "Platforma",
+      "account": "Hisob",
+      "contact": "Aloqa",
+      "telegram": "Telegram",
+      "rights": "Barcha huquqlar himoyalangan."
+    },
+    "iq": {
+      "badge": "Roʻyxatdan oʻtmasdan",
+      "title": "IQ darajangizni 20 daqiqada bilib oling",
+      "text": "Mantiqiy fikrlash boʻyicha test: rasmli topshiriqlarda qonuniyatni toping va boʻsh katakka mos shaklni tanlang. Savollar osondan qiyinga qarab boradi.",
+      "points": {
+        "questions": "{count} ta savol, qiyinchilikka qarab 1-2 daqiqa",
+        "ageAdjusted": "Yoshga moslashuvchi adolatli baholash tizimi",
+        "certificate": "IQ ballingiz va ism-familiyangiz yozilgan sertifikat (PDF)",
+        "share": "Natijani doʻstlarga yuboring yoki storiga joylang"
+      },
+      "cta": "IQ testni boshlash",
+      "price": "Test bepul · natija va sertifikat — <price></price>",
+      "sample": "Namuna",
+      "certificate": "IQ sertifikati",
+      "sampleName": "Botirjon Shokirov",
+      "percentile": "Odamlarning {percentile} foizidan yuqori"
+    }
+  },
+  "auth": {
+    "loginTitle": "Xush kelibsiz!",
+    "loginSubtitle": "Telefon raqamingiz yoki foydalanuvchi nomingiz bilan kiring",
+    "registerTitle": "Akkaunt yarating",
+    "registerSubtitle": "Bir daqiqada roʻyxatdan oʻting va mashqni boshlang",
+    "phone": "Telefon raqami",
+    "phonePlaceholder": "+998 90 123 45 67",
+    "username": "Foydalanuvchi nomi",
+    "usernameHint": "3–20 ta belgi: lotin harflari, raqamlar va _",
+    "password": "Parol",
+    "passwordHint": "Kamida 8 ta belgi",
+    "identifier": "Telefon, foydalanuvchi nomi yoki e-pochta",
+    "submitLogin": "Kirish",
+    "submitRegister": "Roʻyxatdan oʻtish",
+    "pending": "Kuting…",
+    "noAccount": "Akkauntingiz yoʻqmi?",
+    "haveAccount": "Akkauntingiz bormi?",
+    "forgotPassword": "Parolni unutdingizmi? Oʻquv markazingiz administratori yoki qoʻllab-quvvatlash xizmatiga murojaat qiling.",
+    "errors": {
+      "required": "Bu maydon toʻldirilishi shart",
+      "usernameFormat": "3–20 ta belgi: lotin harflari, raqamlar va _",
+      "passwordTooShort": "Parol kamida 8 ta belgidan iborat boʻlishi kerak",
+      "passwordTooLong": "Parol juda uzun",
+      "invalidPhone": "Telefon raqami notoʻgʻri. Masalan: +998 90 123 45 67",
+      "phoneTaken": "Bu telefon raqami allaqachon roʻyxatdan oʻtgan",
+      "usernameTaken": "Bu foydalanuvchi nomi band",
+      "alreadyTaken": "Telefon raqami yoki foydalanuvchi nomi band",
+      "invalidCredentials": "Login yoki parol notoʻgʻri",
+      "tooManyAttempts": "Juda koʻp urinish. Birozdan soʻng qayta urinib koʻring.",
+      "registrationClosed": "Bu platformada roʻyxatdan oʻtish yopiq. Akkauntni oʻquv markazingiz administratori yaratadi.",
+      "notAMember": "Siz bu oʻquv markazining aʼzosi emassiz",
+      "invalidReferral": "Bunday taklif kodi topilmadi",
+      "genderRequired": "Jinsingizni tanlang",
+      "blocked": "Akkauntingiz bloklangan. Savollar boʻlsa, administratorga murojaat qiling."
+    },
+    "referral": "Taklif kodi (ixtiyoriy)",
+    "referralHint": "Doʻstingiz kodi bilan darhol +50 XP olasiz",
+    "gender": "Jinsingiz",
+    "genderHint": "Profil rasmingiz shunga mos yaratiladi",
+    "male": "Oʻgʻil bola",
+    "female": "Qiz bola"
+  },
+  "dashboard": {
+    "greeting": "Salom, {username}!",
+    "subtitle": "Bugun ham ozgina mashq — katta natija.",
+    "level": "{level}-daraja",
+    "xpToNext": "Keyingi darajagacha {xp} XP",
+    "streakLabel": "Streak",
+    "streak": "{count} kun",
+    "longestStreak": "Eng uzun: {count} kun",
+    "rank": "Reyting",
+    "rankValue": "#{rank}",
+    "noRank": "—",
+    "dailyBonus": {
+      "title": "Kunlik bonus",
+      "text": "Har kuni kiring — bonus 7 kun davomida oʻsib boradi.",
+      "claim": "+{xp} XP olish",
+      "claimed": "Bugungi bonus olindi",
+      "day": "{day}-kun"
+    },
+    "comingSoon": "Tez orada",
+    "dailyQuiz": "Kunlik viktorina",
+    "dailyProblem": "Kunlik masala",
+    "iqTest": "IQ test",
+    "weeklyXp": "Bu hafta: {xp} XP",
+    "iq": "Zukko IQ",
+    "iqNotTested": "—",
+    "dailyIq": {
+      "title": "Kunlik IQ test",
+      "start": "Boshlash",
+      "done": "Bajarildi",
+      "text": "5 ta savol · IQ bahoingizni yangilaydi"
+    },
+    "iqPrompt": {
+      "title": "IQ bahoingizni bilib oling",
+      "text": "20 ta savol, ~20 daqiqa. Natijangiz IQ reytingida koʻrinadi va +50 XP olasiz.",
+      "start": "Testni boshlash",
+      "hide": "Yashirish"
+    },
+    "iqTake": "Test topshirish →"
+  },
+  "devices": {
+    "title": "Faol qurilmalar",
+    "subtitle": "Akkauntingizga kirilgan barcha qurilmalar. Tanimagan qurilmangizdan darhol chiqing.",
+    "thisDevice": "Shu qurilma",
+    "unknownDevice": "Nomaʼlum qurilma",
+    "lastActive": "Oxirgi faollik: {time}",
+    "signedIn": "Kirilgan: {time}",
+    "revoke": "Chiqarish",
+    "revokeAll": "Boshqa barcha qurilmalardan chiqish",
+    "onlyThis": "Faqat shu qurilmada kirilgan.",
+    "revokeConfirm": "Bu qurilmadan chiqarilsinmi?",
+    "revokeAllConfirm": "Boshqa barcha qurilmalardan chiqarilsinmi?",
+    "revokeConfirmText": "U yerda qayta kirish uchun parol kerak boʻladi."
+  },
+  "notFound": {
+    "title": "Sahifa topilmadi",
+    "text": "Siz qidirgan sahifa mavjud emas yoki koʻchirilgan. Havolani tekshiring yoki bosh sahifaga qayting.",
+    "back": "Bosh sahifaga qaytish",
+    "learn": "Mashq qilishni davom ettirish"
+  },
+  "learn": {
+    "title": "Oʻrganish",
+    "subtitle": "Fanni tanlang — keyin kurs va mavzuni.",
+    "exercises": "{count} ta mashq",
+    "mastery": "Oʻzlashtirish",
+    "start": "Mashqni boshlash",
+    "continue": "Davom ettirish",
+    "review": "Takrorlash",
+    "due": "Takrorlash vaqti",
+    "levels": {
+      "new": "Yangi",
+      "learning": "Oʻrganilmoqda",
+      "good": "Yaxshi",
+      "mastered": "Oʻzlashtirildi"
+    },
+    "backToCatalog": "Barcha mavzular",
+    "stats": {
+      "solved": "Yechilgan",
+      "accuracy": "Aniqlik",
+      "lastPracticed": "Oxirgi mashq"
+    },
+    "never": "Hali mashq qilinmagan",
+    "howTitle": "Drill rejimi qanday ishlaydi",
+    "how": "Topshiriqlar cheksiz davom etadi va darajangizga moslashadi: yangi va xato qilgan mashqlaringiz koʻproq chiqadi. Har toʻgʻri javob oʻzlashtirishni oshiradi, xato — biroz kamaytiradi. Birinchi marta yechilgan mashq toʻliq XP beradi, qayta yechilgani — 20%.",
+    "suggestionsTitle": "Mashqni davom ettiring",
+    "suggestionsEmpty": "Hali birorta mavzuni boshlamadingiz. Oʻzingizga yoqqan fandan boshlang!",
+    "browse": "Barcha mavzular",
+    "comingSoon": "Tez orada",
+    "tracksCount": "{count} ta kurs",
+    "skillsCount": "{count} ta mavzu",
+    "backToSubjects": "Barcha fanlar",
+    "mySubjects": "Mening fanlarim",
+    "otherSubjects": "Boshqa fanlar",
+    "editInterests": "Fanlarni tanlash",
+    "forYou": "Siz uchun kurslar",
+    "forYouText": "Qiziqishlaringizga mos, hali boshlanmagan kurslar.",
+    "weeklyBadge": "x2 XP",
+    "trackProgress": "oʻzlashtirildi",
+    "completeReward": "Kursdagi barcha mashqlarni yeching — bir martalik +{xp} XP mukofot.",
+    "completeRewardWeekly": "Bu hafta bonus mavzusi! Har bir mashq uchun XP ikki baravar, kursni tugatsangiz {xp} oʻrniga {double} XP.",
+    "subjects": {
+      "PROGRAMMING": {
+        "title": "Dasturlash",
+        "text": "Frontend, backend, kiberxavfsizlik va dasturlash tillari."
+      },
+      "MATH": {
+        "title": "Matematika",
+        "text": "Arifmetika, algebra, tenglamalar va mantiqiy masalalar."
+      },
+      "GEOMETRY": {
+        "title": "Geometriya",
+        "text": "Shakllar, burchaklar, yuza va hajm."
+      },
+      "PHYSICS": {
+        "title": "Fizika",
+        "text": "Mexanika, elektr, optika va tabiat qonunlari."
+      },
+      "CHEMISTRY": {
+        "title": "Kimyo",
+        "text": "Moddalar, elementlar va kimyoviy reaksiyalar."
+      },
+      "BIOLOGY": {
+        "title": "Biologiya",
+        "text": "Hujayra, oʻsimliklar, hayvonlar va inson organizmi."
+      },
+      "CHESS": {
+        "title": "Shaxmat",
+        "text": "Debyutlar, taktika, kombinatsiyalar va endshpil."
+      }
+    },
+    "categories": {
+      "FRONTEND": {
+        "title": "Frontend",
+        "text": "Veb sahifalar va interfeyslar: HTML, CSS, JavaScript, TypeScript, React."
+      },
+      "BACKEND": {
+        "title": "Backend",
+        "text": "Server tomoni va dasturlash tillari: Python, C#, C++."
+      },
+      "CYBERSECURITY": {
+        "title": "Cybersecurity",
+        "text": "Veb zaifliklar, kriptografiya va autentifikatsiya."
+      },
+      "LINUX": {
+        "title": "Linux",
+        "text": "Terminal, fayl tizimi, huquqlar va bash skriptlar."
+      },
+      "NETWORKING": {
+        "title": "Networking",
+        "text": "TCP/IP, DNS, HTTP va tarmoq asoslari."
+      },
+      "BASIC": {
+        "title": "Basic",
+        "text": "Dasturlashga ilk qadam: mantiq, algoritmlar va oʻzgaruvchilar."
+      },
+      "MIX": {
+        "title": "Mix",
+        "text": "Turli yoʻnalishlardan aralash savollar."
+      }
+    }
+  },
+  "interests": {
+    "title": "Sizni qaysi fanlar qiziqtiradi?",
+    "text": "Bir yoki bir nechtasini tanlang — oʻrganish sahifasi va tavsiyalar shunga moslashadi. Keyinroq sozlamalardan oʻzgartirishingiz mumkin.",
+    "continue": "Davom etish",
+    "skip": "Oʻtkazib yuborish",
+    "later": "Keyinroq",
+    "save": "Saqlash",
+    "saved": "Saqlandi",
+    "soon": "Tez orada",
+    "error": "Saqlab boʻlmadi. Qayta urinib koʻring."
+  },
+  "drill": {
+    "close": "Yopish",
+    "check": "Tekshirish",
+    "continue": "Davom etish",
+    "correct": "Toʻgʻri!",
+    "wrong": "Notoʻgʻri",
+    "correctAnswer": "Toʻgʻri javob:",
+    "xp": "+{xp} XP",
+    "firstSolve": "Birinchi yechim",
+    "levelUp": "Yangi daraja: {level}!",
+    "combo": "{count} ketma-ket",
+    "session": "{correct}/{total} toʻgʻri",
+    "loading": "Yuklanmoqda…",
+    "empty": "Bu mavzuda hozircha mashqlar yoʻq.",
+    "error": "Xatolik yuz berdi. Qayta urinib koʻring.",
+    "retry": "Qayta urinish",
+    "difficulty": {
+      "1": "Oson",
+      "2": "Oʻrtacha",
+      "3": "Qiyin"
+    },
+    "types": {
+      "CHOICE": "Toʻgʻri javobni tanlang",
+      "OUTPUT": "Natijani toping",
+      "FILL": "Boʻsh joylarni toʻldiring",
+      "ORDER": "Tartibga keltiring",
+      "MOVE": "Yurishni toping"
+    },
+    "outputPlaceholder": "Javobingizni yozing",
+    "orderHint": "Qatorlarni toʻgʻri tartibda bosing. Olib tashlash uchun yuqoridagi qatorni bosing.",
+    "orderEmpty": "Qatorlarni shu yerga yigʻing",
+    "keyboardHint": "Enter — tekshirish / davom etish",
+    "capped": "Bugungi XP limiti tugadi (Free: kuniga 150 XP). Pro tarifda tezroq oʻsasiz!",
+    "upgrade": "Tariflar",
+    "badgeEarned": "Yangi nishon: {badge}",
+    "weeklyBonus": "+{xp} bonus",
+    "trackCompleted": "Kurs tugatildi: {track}! +{xp} XP"
+  },
+  "iq": {
+    "placement": {
+      "title": "Qisqa IQ test",
+      "text": "Bu test mantiqiy fikrlash darajangizni aniqlaydi va sizni IQ reytingiga qoʻshadi. Test ixtiyoriy — xohlasangiz, keyinroq topshirishingiz mumkin."
+    },
+    "daily": {
+      "title": "Kunlik IQ test",
+      "text": "Har kuni 4 ta yangi savol. Natijangiz IQ bahoingizni yangilaydi va haftalik IQ reytingiga kiradi."
+    },
+    "rules": {
+      "questions": "{count} ta savol",
+      "time": "Har bir savolga qiyinchilikka qarab 1-2 daqiqa",
+      "noBack": "Oldingi savolga qaytib boʻlmaydi"
+    },
+    "start": "Testni boshlash",
+    "resume": "Davom ettirish",
+    "disclaimer": "Zukko IQ — mantiqiy fikrlash boʻyicha taxminiy baho. Bu klinik IQ test emas.",
+    "question": "{number}-savol / {total}",
+    "secondsLeft": "{seconds} s",
+    "timeUp": "Vaqt tugadi",
+    "submitting": "Yuborilmoqda…",
+    "result": {
+      "title": "Sizning Zukko IQ",
+      "correct": "{correct}/{total} toʻgʻri javob",
+      "percentile": "Natijangiz odamlarning taxminan {percentile} foizidan yuqori",
+      "rank": "IQ reytingida #{rank}-oʻrin",
+      "change": "Oldingi: {before}",
+      "xp": "+{xp} XP",
+      "toDashboard": "Bosh sahifaga",
+      "toLeaderboard": "Reytingni koʻrish",
+      "doneToday": "Bugungi IQ test bajarildi",
+      "comeBack": "Ertaga yangi savollar bilan qaytib keling!"
+    },
+    "error": "Xatolik yuz berdi. Sahifani yangilab koʻring.",
+    "later": "Keyinroq",
+    "toDashboard": "Bosh sahifa",
+    "certificate": {
+      "title": "IQ sertifikati",
+      "open": "IQ sertifikatini ochish",
+      "get": "IQ sertifikatini olish — {price} soʻm",
+      "text": "Natijangiz yozilgan sertifikat: PDF qilib yuklab oling, chop eting va ulashing. Undagi QR kod sertifikat haqiqiyligini tasdiqlaydi.",
+      "price": "{price} soʻm",
+      "oneTime": "Bir martalik toʻlov — sertifikat doim sizniki. Har bir yangi natija bilan yangilanadi.",
+      "proHint": "Pro va Diamond tariflarida sertifikat bepul.",
+      "copy": "Nusxa olish",
+      "copied": "Nusxa olindi",
+      "cardMissing": "Karta raqami hali sozlanmagan. Toʻlov uchun administratorga yozing.",
+      "reference": "Toʻlov maʼlumoti",
+      "referencePlaceholder": "Masalan: 8600 **** 1234 kartadan, 14:32 da",
+      "contact": "Savollar uchun: {contact}",
+      "cancel": "Bekor qilish",
+      "submit": "Toʻlovni yubordim",
+      "submitted": "Rahmat! Toʻlov maʼlumotingiz yuborildi. Tasdiqlangach, bildirishnoma olasiz.",
+      "pending": "Sertifikat uchun toʻlovingiz tekshirilmoqda — tasdiqlangach shu yerda ochiladi.",
+      "errors": {
+        "invalid": "Toʻlov maʼlumotini yozing (kamida 3 ta belgi)",
+        "alreadyUnlocked": "Sertifikat allaqachon ochilgan — sahifani yangilang",
+        "pendingExists": "Sizda tekshirilayotgan toʻlov bor. Avval u koʻrib chiqiladi.",
+        "tooMany": "Juda koʻp urinish. Keyinroq qayta urining.",
+        "network": "Yuborilmadi — internetni tekshirib, qayta urining."
+      },
+      "percentile": "Natija",
+      "percentileValue": "{percentile}% dan yuqori",
+      "date": "Sana",
+      "level": "Daraja",
+      "disclaimer": "Zukko IQ — mantiqiy fikrlash boʻyicha taxminiy baho. Bu klinik IQ test emas."
+    },
+    "cheer": {
+      "done": "{done} / {total} savol ortda",
+      "continue": "Davom etish",
+      "start": {
+        "title": "Zoʻr boshladingiz!",
+        "fast": "Siz koʻpchilik ishtirokchilardan tezroq ketyapsiz. Koʻpchilikka shu yergacha yetish uchun koʻproq vaqt kerak boʻladi. Shu surʼatda davom eting!",
+        "steady": "Siz shoshilmasdan, oʻylab javob beryapsiz — aniqlik tezlikdan muhimroq. Shunday davom eting!"
+      },
+      "half": {
+        "title": "Yarmi ortda!",
+        "fast": "Surʼatingiz hali ham koʻpchilikdan yuqori. Diqqatni yoʻqotmang — eng qiziq savollar hali oldinda!",
+        "steady": "Testning yarmini tugatdingiz. Chuqur nafas oling va diqqatni jamlang — qolgani ham qoʻlingizdan keladi!"
+      },
+      "almost": {
+        "title": "Marraga oz qoldi!",
+        "fast": "Atigi {left} ta savol qoldi. Siz bu yerga koʻpchilikdan tezroq yetib keldingiz — oxirigacha shu surʼatni ushlang!",
+        "steady": "Atigi {left} ta savol qoldi. Oxirgi savollarga bor diqqatingizni qarating — natijangiz ularga ham bogʻliq!"
+      }
+    }
+  },
+  "leaderboard": {
+    "title": "Reyting",
+    "subtitle": "Eng faol va eng aqlli oʻquvchilar.",
+    "boards": {
+      "XP": "XP",
+      "IQ": "IQ"
+    },
+    "periods": {
+      "season": "Mavsum",
+      "weekly": "Shu hafta",
+      "all-time": "Umumiy"
+    },
+    "you": "Siz",
+    "yourRank": "Sizning oʻrningiz",
+    "notRanked": "Siz hali bu reytingda yoʻqsiz.",
+    "notRankedXp": "Mashq qiling — XP toʻplaganingizdan soʻng shu yerda paydo boʻlasiz.",
+    "notRankedIq": "IQ test topshiring — natijangiz shu yerda paydo boʻladi.",
+    "empty": "Hozircha bu reytingda hech kim yoʻq.",
+    "weeklyReset": "Haftalik reyting har dushanba 00:00 da (Toshkent vaqti) yangilanadi.",
+    "takeTest": "IQ testni topshirish"
+  },
+  "plans": {
+    "title": "Tariflar",
+    "subtitle": "Tezroq oʻsing, koʻproq imkoniyat oching.",
+    "names": {
+      "FREE": "Free",
+      "PRO": "Pro",
+      "DIAMOND": "Diamond"
+    },
+    "taglines": {
+      "FREE": "Boshlash uchun",
+      "PRO": "Jiddiy oʻrganuvchilar uchun",
+      "DIAMOND": "Eng tez oʻsish"
+    },
+    "free": "Bepul",
+    "perMonth": "soʻm / oy",
+    "current": "Joriy tarif",
+    "until": "{date} gacha",
+    "choose": "Tanlash",
+    "popular": "Ommabop",
+    "features": {
+      "multiplier": "XP ×{x}",
+      "cap": "Mashqlardan kuniga {xp} XP gacha",
+      "noCap": "Cheksiz XP",
+      "clan": "Klanda {n} tagacha aʼzo",
+      "friends": "{n} tagacha doʻst",
+      "avatarsPro": "Pro avatar uslublari",
+      "avatarsDiamond": "Barcha avatar uslublari",
+      "badge": "Profilda {plan} belgisi"
+    },
+    "paymentSoon": "Toʻlov (Click, Payme) tez orada ulanadi. Hozircha tarifni administrator orqali faollashtirish mumkin.",
+    "contact": "Administratorga yozish",
+    "pending": "Toʻlovingiz tekshirilmoqda",
+    "pendingText": "{plan} · {period} · {amount} soʻm. Administrator tasdiqlagach, tarif avtomatik faollashadi.",
+    "cancelRequest": "Soʻrovni bekor qilish",
+    "checkout": {
+      "title": "{plan} tarifiga oʻtish",
+      "period": "Muddat",
+      "discount": "−{percent}%",
+      "total": "Jami",
+      "step1": "1. Quyidagi kartaga {amount} soʻm oʻtkazing",
+      "step2": "2. Toʻlovni aniqlash uchun maʼlumot kiriting",
+      "cardMissing": "Karta raqami hali sozlanmagan. Toʻlov uchun administratorga yozing:",
+      "reference": "Toʻlov maʼlumoti",
+      "referencePlaceholder": "Masalan: 8600 **** 1234 kartadan, 14:32 da",
+      "referenceHint": "Qaysi kartadan va qachon oʻtkazganingiz — admin shu boʻyicha tekshiradi",
+      "submit": "Toʻlovni yubordim",
+      "submitted": "Rahmat! Soʻrovingiz yuborildi. Tasdiqlangach, bildirishnoma olasiz.",
+      "copy": "Nusxa olish",
+      "copied": "Nusxa olindi",
+      "contact": "Savollar uchun: {contact}",
+      "errors": {
+        "invalid": "Maʼlumotlarni tekshiring (kamida 3 ta belgi)",
+        "pendingExists": "Sizda tekshirilayotgan toʻlov bor. Avval u koʻrib chiqiladi.",
+        "tooMany": "Juda koʻp urinish. Keyinroq qayta urining.",
+        "promo": {
+          "notFound": "Bunday promokod topilmadi",
+          "expired": "Promokod muddati tugagan",
+          "usedUp": "Promokod limiti tugagan",
+          "alreadyUsed": "Siz bu promokoddan allaqachon foydalangansiz",
+          "wrongPlan": "Bu promokod boshqa tarif uchun"
+        }
+      },
+      "billing": {
+        "monthly": "Oylik",
+        "annual": "Yillik"
+      },
+      "perMonthPrice": "{price} soʻm / oy",
+      "saving": "Yiliga {saving} soʻm tejaysiz",
+      "promo": {
+        "placeholder": "Promokod",
+        "apply": "Qoʻllash",
+        "applied": "{code} — {percent}% chegirma",
+        "remove": "Promokodni olib tashlash",
+        "discount": "Chegirma ({percent}%)",
+        "free": "Promokod toʻliq narxni qoplaydi — toʻlov qilish shart emas. Soʻrovni yuboring, administrator tasdiqlagach tarif faollashadi.",
+        "submitFree": "Soʻrov yuborish"
+      }
+    },
+    "billing": {
+      "monthly": "Oylik",
+      "annual": "Yillik"
+    },
+    "annualTotal": "Yiliga {total} soʻm — {saving} soʻm tejaysiz",
+    "pendingCertificate": "IQ sertifikati · {amount} soʻm. Administrator tasdiqlagach, sertifikat ochiladi."
+  },
+  "friends": {
+    "title": "Doʻstlar",
+    "subtitle": "Doʻstlaringiz bilan birga oʻrganing va musobaqalashing.",
+    "tabs": {
+      "friends": "Doʻstlarim",
+      "requests": "Soʻrovlar",
+      "search": "Qidirish"
+    },
+    "searchPlaceholder": "Foydalanuvchi nomini yozing…",
+    "searchHint": "Kamida 2 ta belgi",
+    "noResults": "Hech kim topilmadi",
+    "noFriends": "Hali doʻstlaringiz yoʻq. Qidiruv orqali doʻst toping!",
+    "incoming": "Kiruvchi soʻrovlar",
+    "outgoing": "Yuborilgan soʻrovlar",
+    "noRequests": "Yangi soʻrovlar yoʻq",
+    "add": "Doʻst qoʻshish",
+    "sent": "Soʻrov yuborildi",
+    "cancel": "Bekor qilish",
+    "accept": "Qabul qilish",
+    "decline": "Rad etish",
+    "remove": "Oʻchirish",
+    "isFriend": "Doʻstingiz",
+    "weeklyXp": "Bu hafta {xp} XP",
+    "level": "{level}-daraja",
+    "errors": {
+      "limit": "Doʻstlar limiti tugadi — yuqoriroq tarifga oʻting",
+      "notFound": "Topilmadi",
+      "tooMany": "Juda koʻp soʻrov. Keyinroq urinib koʻring.",
+      "self": "Oʻzingizni qoʻsha olmaysiz"
+    },
+    "removeConfirmTitle": "Doʻstlikdan olib tashlaysizmi?",
+    "removeConfirmText": "U doʻstlar roʻyxatingizdan chiqadi. Qayta doʻst boʻlish uchun yangi soʻrov yuborish kerak boʻladi."
+  },
+  "profile": {
+    "level": "Daraja",
+    "xp": "XP",
+    "iq": "Zukko IQ",
+    "rank": "Reyting",
+    "streak": "Eng uzun streak",
+    "days": "{count} kun",
+    "badges": "Nishonlar",
+    "noBadges": "Hali nishonlar yoʻq",
+    "clan": "Klan",
+    "noClan": "Klanda emas",
+    "memberSince": "{date} dan beri",
+    "edit": "Profilni tahrirlash",
+    "notFound": "Foydalanuvchi topilmadi",
+    "lockedBadges": "Qolgan nishonlar",
+    "allBadges": "Barcha nishonlar",
+    "duel": "Duelga chaqirish",
+    "subjects": "Fanlar",
+    "noSubjects": "Hali fanlar tanlanmagan",
+    "chooseSubjects": "Fanlarni tanlash",
+    "interested": "Qiziqadi",
+    "subjectProgress": "{started} / {skills} ta mavzu boshlangan"
+  },
+  "settings": {
+    "title": "Sozlamalar",
+    "subtitle": "Profil, taklif havolasi va qurilmalar.",
+    "avatar": "Profil rasmi",
+    "avatarLocked": "Profil rasmini oʻzgartirish {level}-darajada ochiladi. Hozir siz {current}-darajadasiz.",
+    "reroll": "Yangi koʻrinish",
+    "styleLocked": "{plan} kerak",
+    "saved": "Saqlandi",
+    "interests": "Qiziqishlarim",
+    "interestsText": "Tanlagan fanlaringiz profilingizda koʻrinadi, oʻrganish sahifasida birinchi boʻlib chiqadi va tavsiyalar shularga moslanadi.",
+    "bio": "Men haqimda",
+    "bioPlaceholder": "Masalan: React oʻrganyapman, tez orada junior boʻlaman!",
+    "save": "Saqlash",
+    "inviteTitle": "Doʻstlarni taklif qiling",
+    "inviteText": "Doʻstingiz kodingiz bilan roʻyxatdan oʻtsa, darhol +{bonus} XP oladi. U {level}-darajaga yetganda sizga +{xp} XP beriladi.",
+    "code": "Taklif kodingiz",
+    "link": "Taklif havolasi",
+    "copy": "Nusxa olish",
+    "copied": "Nusxa olindi!",
+    "inviteStats": "Taklif qilinganlar: {joined} · mukofotlanganlar: {rewarded}",
+    "devices": "Faol qurilmalar",
+    "devicesText": "Akkauntingizga kirilgan qurilmalarni boshqaring.",
+    "plan": "Tarif",
+    "planText": "Joriy tarif: {plan}",
+    "errors": {
+      "locked": "Hali ochilmagan",
+      "planRequired": "Bu uslub uchun yuqoriroq tarif kerak",
+      "invalid": "Notoʻgʻri qiymat",
+      "wrongPassword": "Joriy parol notoʻgʻri",
+      "passwordTooShort": "Yangi parol kamida 8 ta belgidan iborat boʻlsin",
+      "passwordTooLong": "Parol juda uzun",
+      "samePassword": "Yangi parol eskisidan farq qilishi kerak",
+      "tooMany": "Juda koʻp urinish. Keyinroq qayta urining."
+    },
+    "gender": "Jins",
+    "genderText": "Profil rasmingiz jinsingizga mos yaratiladi. Istalgan vaqtda oʻzgartirishingiz mumkin.",
+    "genderNotSet": "Hali tanlanmagan — tanlang, shunda rasmingiz mos boʻladi.",
+    "password": "Parolni oʻzgartirish",
+    "currentPassword": "Joriy parol",
+    "newPassword": "Yangi parol",
+    "changePassword": "Parolni oʻzgartirish",
+    "passwordChanged": "Parol oʻzgartirildi. Boshqa qurilmalardagi sessiyalar yopildi.",
+    "mustChange": "Xavfsizlik uchun parolingizni oʻzgartiring.",
+    "mustChangeCta": "Hozir oʻzgartirish",
+    "genderConfirmTitle": "Jinsni oʻzgartirasizmi?",
+    "genderConfirmText": "Avataringiz yangi jinsga mos ravishda qayta chiziladi.",
+    "passwordHint": "Yangi parol kamida 8 ta belgidan iborat boʻlsin. Oʻzgartirgach, boshqa qurilmalardagi sessiyalar yopiladi.",
+    "sound": "Ovoz effektlari",
+    "soundText": "Toʻgʻri va notoʻgʻri javob, daraja, duel va taymer ovozlari. Shu qurilmada eslab qolinadi."
+  },
+  "notifications": {
+    "title": "Bildirishnomalar",
+    "empty": "Hozircha bildirishnomalar yoʻq",
+    "markAll": "Hammasini oʻqish",
+    "types": {
+      "FRIEND_REQUEST": "<b>{username}</b> sizga doʻstlik soʻrovini yubordi",
+      "FRIEND_ACCEPTED": "<b>{username}</b> doʻstlik soʻrovingizni qabul qildi",
+      "CLAN_JOIN_REQUEST": "<b>{username}</b> «{clanName}» klaniga qoʻshilmoqchi",
+      "CLAN_JOIN_APPROVED": "Siz «{clanName}» klaniga qabul qilindingiz",
+      "CLAN_JOIN_REJECTED": "«{clanName}» klaniga soʻrovingiz rad etildi",
+      "CLAN_WEEKLY_RESULT": "«{clanName}» haftalik musobaqada {rank}-oʻrinni egalladi! +{xp} XP",
+      "BADGE_EARNED": "Yangi nishon: <b>{badge}</b>",
+      "LEVEL_UP": "Tabriklaymiz! Siz {level}-darajaga chiqdingiz",
+      "REFERRAL_JOINED": "<b>{username}</b> taklif kodingiz bilan roʻyxatdan oʻtdi",
+      "REFERRAL_REWARD": "<b>{username}</b> 3-darajaga yetdi — sizga +{xp} XP",
+      "PAYMENT_SUBMITTED": "{plan, select, IQ_CERTIFICATE {<b>{username}</b> IQ sertifikati uchun {amount} soʻm toʻlov yubordi} other {<b>{username}</b> {plan} tarifi uchun {amount} soʻm toʻlov yubordi}}",
+      "PAYMENT_APPROVED": "{plan, select, IQ_CERTIFICATE {Toʻlovingiz tasdiqlandi — IQ sertifikatingiz ochildi} other {Toʻlovingiz tasdiqlandi — {plan} tarifi faollashtirildi}}",
+      "PAYMENT_REJECTED": "{plan, select, IQ_CERTIFICATE {IQ sertifikati uchun toʻlovingiz rad etildi: {reason}} other {{plan} uchun toʻlovingiz rad etildi: {reason}}}",
+      "TRACK_COMPLETED": "<b>{track}</b> kursini toʻliq tugatdingiz! +{xp} XP",
+      "SEASON_RESULT": "{season}-mavsum yakunlandi: siz <b>{rank}-oʻrinni</b> egalladingiz ({xp} XP)",
+      "DUEL_INVITE": "<b>{username}</b> sizni «{track}» boʻyicha duelga chaqirdi — {stake} XP tikilgan",
+      "DUEL_DECLINED": "<b>{username}</b> duelni rad etdi",
+      "DUEL_RESULT": "{result, select, win {<b>{username}</b> bilan duelda gʻalaba! +{xp} XP} lose {<b>{username}</b> bilan duelda yutqazdingiz: {xp} XP} other {<b>{username}</b> bilan duel durrang}}"
+    },
+    "unread": "{count} ta oʻqilmagan",
+    "back": "Barcha bildirishnomalar",
+    "open": "Ochish",
+    "titles": {
+      "FRIEND_REQUEST": "Doʻstlik soʻrovi",
+      "FRIEND_ACCEPTED": "Yangi doʻst",
+      "CLAN_JOIN_REQUEST": "Klanga qoʻshilish soʻrovi",
+      "CLAN_JOIN_APPROVED": "Klanga qabul qilindingiz",
+      "CLAN_JOIN_REJECTED": "Klan soʻrovi rad etildi",
+      "CLAN_WEEKLY_RESULT": "Klanning haftalik natijasi",
+      "BADGE_EARNED": "Yangi nishon",
+      "LEVEL_UP": "Yangi daraja",
+      "REFERRAL_JOINED": "Taklif qilingan doʻst",
+      "REFERRAL_REWARD": "Taklif mukofoti",
+      "PAYMENT_SUBMITTED": "Yangi toʻlov",
+      "PAYMENT_APPROVED": "Toʻlov tasdiqlandi",
+      "PAYMENT_REJECTED": "Toʻlov rad etildi",
+      "TRACK_COMPLETED": "Kurs tugatildi",
+      "SEASON_RESULT": "Mavsum natijasi",
+      "DUEL_INVITE": "Duelga taklif",
+      "DUEL_DECLINED": "Duel rad etildi",
+      "DUEL_RESULT": "Duel natijasi"
+    }
+  },
+  "clans": {
+    "title": "Klanlar",
+    "subtitle": "Jamoa boʻlib oʻrganing va har hafta boshqa klanlar bilan bellashing.",
+    "create": "Klan yaratish",
+    "myClan": "Mening klanim",
+    "open": "Ochish",
+    "weeklyTitle": "Shu haftalik musobaqa",
+    "howScore": "Klan bali — aʼzolarning shu haftada toʻplagan XP yigʻindisi. Hafta yakunida top-3 klan aʼzolari +{first} / +{second} / +{third} XP oladi, gʻoliblar — «Chempion» nishonini.",
+    "lastWeek": "Oʻtgan hafta gʻoliblari",
+    "noClans": "Hali klanlar yoʻq. Birinchi boʻlib yarating!",
+    "members": "{count} aʼzo",
+    "memberLimit": "{count}/{limit} aʼzo",
+    "score": "{xp} XP",
+    "weeklyRank": "Haftalik oʻrin",
+    "form": {
+      "title": "Yangi klan",
+      "name": "Klan nomi",
+      "namePlaceholder": "Masalan: React Ninjalari",
+      "tag": "Teg",
+      "tagHint": "2–5 ta lotin harfi yoki raqam, masalan RN",
+      "description": "Tavsif (ixtiyoriy)",
+      "descriptionPlaceholder": "Klaningiz haqida bir-ikki gap",
+      "emblem": "Emblema",
+      "color": "Rang",
+      "submit": "Yaratish",
+      "save": "Saqlash"
+    },
+    "errors": {
+      "nameLength": "Nomi 3–30 ta belgi boʻlishi kerak",
+      "tagFormat": "2–5 ta lotin harfi yoki raqam",
+      "tagTaken": "Bu teg band",
+      "descriptionLength": "200 ta belgidan oshmasin",
+      "inClan": "Siz allaqachon klan aʼzosisiz",
+      "tooMany": "Juda koʻp urinish. Keyinroq qayta urining.",
+      "full": "Klan toʻla",
+      "forbidden": "Ruxsat yoʻq",
+      "notFound": "Topilmadi"
+    },
+    "join": "Qoʻshilish soʻrovi",
+    "joinMessage": "Xabar (ixtiyoriy)",
+    "joinMessagePlaceholder": "Nega qoʻshilmoqchisiz?",
+    "requestSent": "Soʻrov yuborildi — klan admini tasdiqlashini kuting",
+    "cancelRequest": "Soʻrovni bekor qilish",
+    "approvalNote": "Klanga faqat admin tasdiqlagandan soʻng qoʻshilasiz",
+    "leave": "Klandan chiqish",
+    "requests": "Qoʻshilish soʻrovlari",
+    "noRequests": "Yangi soʻrovlar yoʻq",
+    "approve": "Qabul qilish",
+    "reject": "Rad etish",
+    "kick": "Chiqarish",
+    "makeOfficer": "Ofitser qilish",
+    "removeOfficer": "Oddiy aʼzo qilish",
+    "roles": {
+      "LEADER": "Lider",
+      "OFFICER": "Ofitser",
+      "MEMBER": "Aʼzo"
+    },
+    "full": "Klan toʻla",
+    "inOtherClan": "Siz boshqa klan aʼzosisiz",
+    "membersTitle": "Aʼzolar",
+    "founded": "Tashkil etilgan: {date}",
+    "leaveConfirmTitle": "Klandan chiqasizmi?",
+    "leaveConfirmText": "Qayta qoʻshilish uchun yana soʻrov yuborishingiz va tasdiqlanishini kutishingiz kerak boʻladi.",
+    "leaveConfirmLeader": "Siz klan rahbarisiz: rahbarlik ofitserga (boʻlmasa eng eski aʼzoga) oʻtadi. Klanda yolgʻiz boʻlsangiz, klan oʻchiriladi.",
+    "cancelRequestConfirm": "Qoʻshilish soʻrovini bekor qilasizmi?",
+    "removeOfficerConfirm": "{username} ofitserlikdan olinsinmi?",
+    "kickConfirmTitle": "{username} klandan chiqarilsinmi?",
+    "kickConfirmText": "Qayta qoʻshilish uchun u yangi soʻrov yuborishi kerak boʻladi.",
+    "settings": {
+      "title": "Klan sozlamalari",
+      "subtitle": "Nom, teg, tavsif va koʻrinish. Teg oʻzgarsa, klan havolasi ham oʻzgaradi.",
+      "transfer": "Rahbarlikni topshirish",
+      "transferHint": "Tanlangan aʼzo klan rahbari boʻladi, siz ofitser boʻlib qolasiz.",
+      "transferConfirm": "Rahbarlik {username}ga topshirilsinmi?",
+      "transferText": "Klan sozlamalarini endi faqat yangi rahbar oʻzgartira oladi. Buni ortga qaytarish uchun u sizga qaytarib topshirishi kerak.",
+      "newLeader": "Yangi rahbar",
+      "noMembers": "Klanda boshqa aʼzo yoʻq.",
+      "danger": "Xavfli hudud",
+      "deleteHint": "Klan, uning aʼzoliklari va haftalik natijalari butunlay oʻchiriladi.",
+      "delete": "Klanni oʻchirish",
+      "deleteConfirm": "«{name}» butunlay oʻchirilsinmi?",
+      "deleteText": "Bu amalni ortga qaytarib boʻlmaydi. Barcha aʼzolar klansiz qoladi.",
+      "typeName": "Tasdiqlash uchun klan nomini yozing: {name}"
+    },
+    "chat": "Klan chati"
+  },
+  "rail": {
+    "friendsTitle": "Doʻstlar bu hafta",
+    "noFriends": "Doʻstlaringizni qoʻshing va birga musobaqalashing",
+    "findFriends": "Doʻst topish",
+    "clansTitle": "Klanlar reytingi",
+    "seeAll": "Barchasi",
+    "inviteTitle": "Doʻstni taklif qiling",
+    "inviteText": "Har bir faol doʻst uchun +150 XP",
+    "inviteCta": "Taklif qilish",
+    "upgradeTitle": "Tezroq oʻsing",
+    "upgradeText": "Pro bilan XP ×1.5 va kuniga 600 XP gacha",
+    "upgradeCta": "Tariflar",
+    "level": "{level}-daraja",
+    "code": "Taklif kodi",
+    "copyLink": "Nusxalash",
+    "copied": "Nusxalandi",
+    "share": "Ulashish",
+    "shareText": "Zukkolar'da men bilan birga dasturlashni oʻrgan! Taklif kodim: {code}"
+  },
+  "badges": {
+    "first_step": {
+      "title": "Birinchi qadam",
+      "text": "Birinchi mashqni yeching"
+    },
+    "solver_50": {
+      "title": "Masala yechuvchi",
+      "text": "50 ta mashqni toʻgʻri yeching"
+    },
+    "solver_200": {
+      "title": "Jangchi",
+      "text": "200 ta mashqni toʻgʻri yeching"
+    },
+    "streak_3": {
+      "title": "Uchqun",
+      "text": "3 kunlik streak"
+    },
+    "streak_7": {
+      "title": "Olov",
+      "text": "7 kunlik streak"
+    },
+    "streak_30": {
+      "title": "Toʻxtovsiz",
+      "text": "30 kunlik streak"
+    },
+    "level_5": {
+      "title": "Yulduzcha",
+      "text": "5-darajaga chiqing"
+    },
+    "level_10": {
+      "title": "Tajribali",
+      "text": "10-darajaga chiqing — profil rasmini oʻzgartirish ochiladi"
+    },
+    "level_20": {
+      "title": "Afsona",
+      "text": "20-darajaga chiqing"
+    },
+    "skill_master": {
+      "title": "Usta",
+      "text": "Bitta mavzuni 85% dan yuqori oʻzlashtiring"
+    },
+    "iq_tested": {
+      "title": "Aql sinovi",
+      "text": "IQ testni topshiring"
+    },
+    "iq_130": {
+      "title": "Daho",
+      "text": "Zukko IQ 130 dan yuqori"
+    },
+    "first_friend": {
+      "title": "Doʻstona",
+      "text": "Birinchi doʻstingizni qoʻshing"
+    },
+    "friends_10": {
+      "title": "Jamoa ruhi",
+      "text": "10 ta doʻst"
+    },
+    "clan_member": {
+      "title": "Klan aʼzosi",
+      "text": "Klanga qoʻshiling"
+    },
+    "clan_founder": {
+      "title": "Asoschi",
+      "text": "Klan yarating"
+    },
+    "recruiter": {
+      "title": "Yollovchi",
+      "text": "Taklif qilgan doʻstingiz 3-darajaga yetsin"
+    },
+    "ambassador": {
+      "title": "Elchi",
+      "text": "5 ta faol doʻst taklif qiling"
+    },
+    "pro": {
+      "title": "Pro",
+      "text": "Pro yoki Diamond tarifga oʻting"
+    },
+    "diamond": {
+      "title": "Olmos",
+      "text": "Diamond tarifga oʻting"
+    },
+    "clan_champion": {
+      "title": "Chempion",
+      "text": "Klaningiz haftalik musobaqada 1-oʻrinni egallasin"
+    }
+  },
+  "admin": {
+    "title": "Admin panel",
+    "backToSite": "Saytga qaytish",
+    "cms": {
+      "title": "Kontent boshqaruvi",
+      "subtitle": "Kurslar, modullar, mavzular, mashqlar va IQ savollari. Oʻzgarishlar oʻquvchilarga darhol koʻrinadi.",
+      "home": "Kontent boshqaruvi",
+      "tracks": "Kurslar",
+      "newExercise": "Yangi mashq",
+      "totalTracks": "Kurslar",
+      "publishedVsTotal": "nashr etilgan / jami",
+      "modulesAndSkills": "Modullar / mavzular",
+      "modulesSkillsCount": "barcha kurslarda",
+      "totalExercises": "Mashqlar",
+      "iqItems": "IQ savollar",
+      "drafts": "{count} ta qoralama",
+      "published": "{count} ta nashr etilgan",
+      "tracksTitle": "Kurslar",
+      "tracksDesc": "Fanlar boʻyicha kurslar, ularning modullari va mavzulari.",
+      "exercisesTitle": "Mashqlar banki",
+      "exercisesDesc": "Barcha mashqlar: qidirish, tahrirlash, nashr etish yoki arxivlash.",
+      "iqTitle": "IQ savollar banki",
+      "iqDesc": "Zukko IQ testi uchun ketma-ketlik, shakl va mantiq savollari.",
+      "filesNote": "Kontent maʼlumotlar bazasida saqlanadi. Uni fayllarga olish uchun `pnpm content:pull`, fayllarda tahrirlanganini bazaga yuklash uchun `pnpm content:push` ishlatiladi.",
+      "cancel": "Bekor qilish",
+      "save": "Saqlash",
+      "saving": "Saqlanmoqda…",
+      "edit": "Tahrirlash",
+      "delete": "Oʻchirish",
+      "deleteText": "Faqat hali hech kim mashq qilmagan kontentni oʻchirish mumkin. Oʻchirilgach, ortga qaytarib boʻlmaydi.",
+      "filter": "Filtrlash",
+      "found": "{count} ta topildi",
+      "searchPlaceholder": "Kalit yoki savol matni…",
+      "allTypes": "Barcha turlar",
+      "allStatuses": "Barcha holatlar",
+      "allCategories": "Barcha kategoriyalar",
+      "allDifficulties": "Barcha darajalar",
+      "allSkills": "Barcha mavzular",
+      "page": "{page} / {pages}",
+      "prev": "Oldingi",
+      "next": "Keyingi",
+      "structure": "{modules} modul · {skills} mavzu · {exercises} mashq",
+      "exerciseCount": "{count} ta mashq",
+      "statusLabel": "Holat",
+      "statusSaved": "Holat yangilandi",
+      "status": {
+        "PUBLISHED": "Nashr etilgan",
+        "DRAFT": "Qoralama",
+        "ARCHIVED": "Arxivlangan"
+      },
+      "errors": {
+        "invalid": "Maʼlumotlar notoʻgʻri",
+        "notFound": "Topilmadi — sahifani yangilab koʻring",
+        "slugTaken": "Bu slug band",
+        "keyTaken": "Bu kalit band",
+        "inUse": "Oʻquvchilar bu yerda mashq qilgan — oʻchirib boʻlmaydi. Mashqlarni arxivlang.",
+        "network": "Saqlab boʻlmadi. Internetni tekshirib, qayta urinib koʻring."
+      },
+      "columns": {
+        "track": "Kurs",
+        "subject": "Fan",
+        "structure": "Tarkibi",
+        "actions": "Amallar",
+        "question": "Savol"
+      },
+      "fields": {
+        "title": "Nomi",
+        "slug": "Slug",
+        "slugHint": "Kichik lotin harflari, raqamlar va chiziqcha",
+        "description": "Tavsifi",
+        "subject": "Fan",
+        "category": "Kategoriya",
+        "icon": "Ikonka",
+        "iconDefault": "Fan ikonkasi",
+        "status": "Holat",
+        "order": "Tartib raqami",
+        "key": "Kalit",
+        "difficulty": "Qiyinlik",
+        "prompt": "Savol matni",
+        "options": "Javob variantlari (toʻgʻrisini belgilang)",
+        "correctOption": "{n}-variant toʻgʻri",
+        "optionN": "{n}-variant",
+        "addOption": "Variant qoʻshish",
+        "skill": "Mavzu",
+        "type": "Turi"
+      },
+      "track": {
+        "new": "Yangi kurs",
+        "newTitle": "Yangi kurs",
+        "editTitle": "Kursni tahrirlash",
+        "saved": "Kurs saqlandi",
+        "created": "Kurs yaratildi",
+        "empty": "Hali kurslar yoʻq.",
+        "open": "Modullar"
+      },
+      "module": {
+        "new": "Modul qoʻshish",
+        "newTitle": "Yangi modul",
+        "editTitle": "Modulni tahrirlash",
+        "saved": "Modul saqlandi",
+        "created": "Modul qoʻshildi",
+        "deleteTitle": "«{title}» moduli oʻchirilsinmi?",
+        "deleted": "Modul oʻchirildi",
+        "empty": "Bu kursda hali modul yoʻq",
+        "emptyText": "Avval modul qoʻshing, keyin uning ichiga mavzular va mashqlar."
+      },
+      "skill": {
+        "new": "Mavzu qoʻshish",
+        "newTitle": "Yangi mavzu",
+        "editTitle": "Mavzuni tahrirlash",
+        "saved": "Mavzu saqlandi",
+        "created": "Mavzu qoʻshildi",
+        "deleteTitle": "«{title}» mavzusi oʻchirilsinmi?",
+        "deleted": "Mavzu oʻchirildi",
+        "empty": "Bu modulda hali mavzu yoʻq.",
+        "slugHint": "Mavzu sahifasining manzili — barcha kurslar boʻyicha yagona boʻlishi kerak",
+        "exercises": "Mavzu mashqlari"
+      },
+      "exercise": {
+        "short": "Mashq",
+        "newTitle": "Yangi mashq",
+        "editTitle": "Mashqni tahrirlash",
+        "saved": "Mashq saqlandi",
+        "created": "Mashq yaratildi",
+        "empty": "Mashqlar topilmadi.",
+        "noSkills": "Avval kurs, modul va mavzu yarating — mashq mavzuga biriktiriladi.",
+        "basics": "Asosiy parametrlar",
+        "content": "Mashq mazmuni",
+        "types": {
+          "CHOICE": "Variantli test",
+          "OUTPUT": "Natijani yozish",
+          "FILL": "Boʻsh joyni toʻldirish",
+          "ORDER": "Tartiblash",
+          "MOVE": "Shaxmat: yurish"
+        },
+        "level": "{difficulty}-daraja · {xp} XP",
+        "lang": "Til",
+        "langHint": "Kod uchun dasturlash tili. Oddiy matn (matematika, kimyo, shaxmat…) uchun «matn»ni tanlang.",
+        "langText": "matn (kod emas)",
+        "text": "Matn",
+        "code": "Kod",
+        "optional": "Ixtiyoriy",
+        "fillHint": "Boʻsh joy oʻrniga {blank} yozing. Hozir: {count} ta boʻsh joy.",
+        "accepted": "Qabul qilinadigan javoblar",
+        "addAccepted": "Yana bir javob qoʻshish",
+        "fillAnswers": "Boʻsh joylar javoblari",
+        "fillAnswersHint": "Har bir boʻsh joy uchun alohida qator. Bir nechta toʻgʻri shaklni vergul bilan ajrating.",
+        "bank": "Soʻzlar banki — chalgʻituvchi soʻzlar",
+        "bankHint": "Vergul bilan ajrating. Toʻldirilsa, oʻquvchi javobni yozmaydi — soʻzlarni bosib tanlaydi. Matnli mashqlar uchun tavsiya etiladi.",
+        "lines": "Qatorlar (toʻgʻri tartibda kiriting)",
+        "lineN": "{n}-qator",
+        "addLine": "Qator qoʻshish",
+        "explanation": "Tushuntirish",
+        "explanationHint": "Ixtiyoriy. Oʻquvchi javob berganidan keyin koʻrsatiladi.",
+        "preview": "Oʻquvchiga koʻrinishi",
+        "previewNote": "Toʻgʻri javoblar bu yerda belgilangan. Oʻquvchiga variantlar va qatorlar aralashtirib koʻrsatiladi.",
+        "board": "Shaxmat taxtasi (FEN)",
+        "boardHint": "Ixtiyoriy. Savol ustida diagramma koʻrsatiladi. Faqat donalar joylashuvi yetarli.",
+        "boardMoveHint": "Toʻliq FEN: joylashuv, kim yurishi (w yoki b), qalʼalanish huquqi… Oʻquvchi yuradigan tomon — FEN dagi navbat.",
+        "boardMarks": "Belgilangan kataklar",
+        "boardMarksHint": "Vergul bilan: e4, d5",
+        "boardFlip": "Qoralar tomonidan koʻrsatish",
+        "moves": "Toʻgʻri yurishlar",
+        "movesHint": "Shaxmat yozuvida, vergul bilan: Qh7#, Nf3, exd5, O-O, e8=Q. Agar yurish mat boʻlsa, boshqa har qanday mat ham qabul qilinadi."
+      },
+      "iq": {
+        "new": "Yangi IQ savol",
+        "newTitle": "Yangi IQ savol",
+        "editTitle": "IQ savolni tahrirlash",
+        "saved": "IQ savol saqlandi",
+        "created": "IQ savol yaratildi",
+        "empty": "IQ savollar topilmadi.",
+        "figure": "Figura",
+        "figureHint": "Ixtiyoriy: oʻrtada katta koʻrsatiladigan ketma-ketlik yoki shakllar, masalan «2, 4, 8, 16, ?»",
+        "image": "Savol rasmi",
+        "imageHint": "Ixtiyoriy. PNG, JPG, WebP yoki SVG, 2 MB gacha",
+        "optionsImage": "Javoblar rasmi",
+        "optionsImageHint": "Ixtiyoriy: barcha javoblar bitta rasmda — teng kvadrat kataklar, chapdan oʻngga. Yuklangach, toʻgʻri katakni bosing.",
+        "columns": "Ustunlar",
+        "rows": "Qatorlar",
+        "upload": "Rasm yuklash",
+        "removeImage": "Rasmni olib tashlash",
+        "rating": "{difficulty}-daraja · reyting {rating}",
+        "categories": {
+          "sequence": "Ketma-ketlik",
+          "letters": "Harflar",
+          "shapes": "Shakllar",
+          "matrix": "Matritsa",
+          "analogy": "Analogiya",
+          "odd": "Ortiqchasini topish",
+          "logic": "Mantiq",
+          "math": "Matematika"
+        },
+        "difficulty": {
+          "1": "1 — juda oson",
+          "2": "2 — oson",
+          "3": "3 — oʻrtacha",
+          "4": "4 — qiyin",
+          "5": "5 — juda qiyin"
+        }
+      }
+    },
+    "nav": {
+      "dashboard": "Statistika",
+      "content": "Kontent",
+      "users": "Foydalanuvchilar",
+      "payments": "Toʻlovlar",
+      "audit": "Amallar tarixi",
+      "events": "Mavsum va bonuslar",
+      "promos": "Promokodlar",
+      "partners": "Hamkorlar",
+      "guestIq": "IQ testlar",
+      "settings": "Sozlamalar"
+    },
+    "stats": {
+      "totalUsers": "Jami foydalanuvchilar",
+      "newToday": "Bugun roʻyxatdan oʻtdi",
+      "new7d": "Soʻnggi 7 kun",
+      "new30d": "Soʻnggi 30 kun",
+      "activeToday": "Bugun faol",
+      "active7d": "7 kunda faol",
+      "paidUsers": "Pullik tarifda",
+      "paidSplit": "Pro: {pro} · Diamond: {diamond}",
+      "guestIqFinished": "Mehmon IQ testlar (tugatilgan)",
+      "guestIqPaid": "{paid} tasi pullik",
+      "pendingPayments": "Kutilayotgan toʻlovlar",
+      "revenueMonth": "Shu oy tushum",
+      "revenueTotal": "Jami: {amount} soʻm",
+      "attemptsToday": "Bugungi mashqlar",
+      "iqTested": "IQ test topshirgan",
+      "clans": "Klanlar",
+      "blocked": "Bloklangan"
+    },
+    "chart": {
+      "title": "Roʻyxatdan oʻtishlar",
+      "subtitle": "Soʻnggi 30 kun, kunlik",
+      "tooltip": "{date}: {count} ta",
+      "table": "Jadval koʻrinishi"
+    },
+    "som": "{amount} soʻm",
+    "users": {
+      "searchPlaceholder": "Ism, telefon yoki e-pochta…",
+      "filters": {
+        "all": "Hammasi",
+        "paid": "Pullik",
+        "blocked": "Bloklangan",
+        "admins": "Adminlar"
+      },
+      "columns": {
+        "user": "Foydalanuvchi",
+        "contact": "Aloqa",
+        "plan": "Tarif",
+        "level": "Daraja",
+        "joined": "Qoʻshilgan",
+        "active": "Oxirgi faollik"
+      },
+      "total": "{count} ta foydalanuvchi",
+      "empty": "Hech kim topilmadi",
+      "prev": "Oldingi",
+      "next": "Keyingi",
+      "page": "{page} / {pages}",
+      "blockedBadge": "Bloklangan",
+      "adminBadge": "Admin",
+      "never": "—",
+      "byPartner": "Hamkor: {name}"
+    },
+    "user": {
+      "back": "Foydalanuvchilar",
+      "info": "Maʼlumotlar",
+      "phone": "Telefon",
+      "email": "E-pochta",
+      "gender": "Jins",
+      "interests": "Qiziqishlari",
+      "joined": "Roʻyxatdan oʻtgan",
+      "lastActive": "Oxirgi faollik",
+      "stats": "XP: {xp} · daraja {level} · mashqlar: {attempts} · IQ testlar: {iq} · nishonlar: {badges}",
+      "clan": "Klan",
+      "plan": "Tarif",
+      "planUntil": "{date} gacha",
+      "setPlan": "Tarifni oʻrnatish",
+      "days": "kun",
+      "apply": "Saqlash",
+      "block": "Bloklash",
+      "unblock": "Blokdan chiqarish",
+      "blockConfirm": "Foydalanuvchi bloklansinmi? Barcha qurilmalardan chiqariladi.",
+      "resetPassword": "Parolni tiklash",
+      "resetConfirm": "Yangi vaqtinchalik parol yaratilsinmi? Foydalanuvchi barcha qurilmalardan chiqariladi.",
+      "tempPassword": "Vaqtinchalik parol (faqat bir marta koʻrsatiladi):",
+      "revokeSessions": "Barcha sessiyalarni yopish",
+      "sessions": "Faol sessiyalar: {count}",
+      "xp": "XP qoʻshish / ayirish",
+      "xpAmount": "Miqdor (masalan 100 yoki -50)",
+      "xpReason": "Sabab",
+      "payments": "Toʻlovlar",
+      "noPayments": "Toʻlovlar yoʻq",
+      "xpEvents": "Soʻnggi XP",
+      "history": "Admin amallari",
+      "noHistory": "Hali amallar yoʻq",
+      "done": "Bajarildi",
+      "partner": "Hamkor"
+    },
+    "payments": {
+      "tabs": {
+        "PENDING": "Kutilmoqda",
+        "APPROVED": "Tasdiqlangan",
+        "REJECTED": "Rad etilgan"
+      },
+      "empty": "Toʻlovlar yoʻq",
+      "reference": "Maʼlumot",
+      "approve": "Tasdiqlash",
+      "reject": "Rad etish",
+      "rejectReason": "Rad etish sababi",
+      "rejectPlaceholder": "Masalan: toʻlov topilmadi",
+      "note": "Izoh",
+      "current": "Hozirgi tarif: {plan}",
+      "reviewed": "{date} · {note}",
+      "planPeriod": "{plan} · {months} oy",
+      "products": {
+        "PLAN": "Tarif",
+        "IQ_CERTIFICATE": "IQ sertifikati"
+      },
+      "promo": "{code} · −{percent}% (−{discount} soʻm)"
+    },
+    "errors": {
+      "notPending": "Bu toʻlov allaqachon koʻrib chiqilgan",
+      "reasonRequired": "Sababni yozing",
+      "invalid": "Notoʻgʻri qiymat",
+      "self": "Oʻzingizga bu amalni qila olmaysiz",
+      "adminTarget": "Boshqa adminga bu amalni qila olmaysiz",
+      "notFound": "Topilmadi",
+      "seasonPast": "Bu muddat allaqachon oʻtib ketgan",
+      "alreadyPlanned": "Keyingi mavsum allaqachon rejalashtirilgan",
+      "promoTaken": "Bunday kod allaqachon bor",
+      "promoPast": "Oxirgi kun oʻtib ketgan",
+      "partnerTaken": "Bu havola kodi band"
+    },
+    "audit": {
+      "empty": "Hali amallar yoʻq",
+      "by": "{admin}",
+      "target": "→ {user}"
+    },
+    "actions": {
+      "payment": {
+        "approve": "Toʻlovni tasdiqladi",
+        "reject": "Toʻlovni rad etdi"
+      },
+      "user": {
+        "setPlan": "Tarifni oʻzgartirdi",
+        "block": "Blokladi",
+        "unblock": "Blokdan chiqardi",
+        "resetPassword": "Parolni tikladi",
+        "adjustXp": "XP ni oʻzgartirdi",
+        "revokeSessions": "Sessiyalarni yopdi"
+      },
+      "events": {
+        "weeklyTopic": "Haftalik bonus mavzusini tanladi",
+        "seasonLength": "Mavsum davomiyligini oʻzgartirdi",
+        "planSeason": "Yangi mavsumni rejalashtirdi"
+      },
+      "cms": {
+        "track": {
+          "create": "Kurs yaratdi",
+          "update": "Kursni tahrirladi",
+          "delete": "Kursni oʻchirdi",
+          "status": "Kurs holatini oʻzgartirdi"
+        },
+        "module": {
+          "create": "Modul yaratdi",
+          "update": "Modulni tahrirladi",
+          "delete": "Modulni oʻchirdi",
+          "status": "Modul holatini oʻzgartirdi"
+        },
+        "skill": {
+          "create": "Mavzu yaratdi",
+          "update": "Mavzuni tahrirladi",
+          "delete": "Mavzuni oʻchirdi",
+          "status": "Mavzu holatini oʻzgartirdi"
+        },
+        "exercise": {
+          "create": "Mashq yaratdi",
+          "update": "Mashqni tahrirladi",
+          "delete": "Mashqni oʻchirdi",
+          "status": "Mashq holatini oʻzgartirdi"
+        },
+        "iq": {
+          "create": "IQ savol yaratdi",
+          "update": "IQ savolni tahrirladi",
+          "delete": "IQ savolni oʻchirdi",
+          "status": "IQ savol holatini oʻzgartirdi"
+        }
+      },
+      "promo": {
+        "create": "Promokod yaratdi",
+        "enable": "Promokodni yoqdi",
+        "disable": "Promokodni oʻchirdi"
+      },
+      "partner": {
+        "create": "Hamkor qoʻshdi",
+        "update": "Hamkorni tahrirladi",
+        "enable": "Hamkorni yoqdi",
+        "disable": "Hamkorni oʻchirdi"
+      },
+      "guestIq": {
+        "paid": "IQ test toʻlovini tasdiqladi",
+        "unpaid": "IQ test toʻlovini bekor qildi"
+      },
+      "settings": {
+        "update": "Sozlamalarni oʻzgartirdi"
+      }
+    },
+    "events": {
+      "subtitle": "Mavsumlar (1–3 oy) va haftalik ikki baravar XP mavzusi.",
+      "seasons": "Mavsumlar",
+      "seasonName": "{number}-mavsum",
+      "daysLeft": "{count} kun qoldi",
+      "participants": "{count} ta ishtirokchi",
+      "noSeason": "Hozir faol mavsum yoʻq.",
+      "nextPlanned": "{number}-mavsum rejalashtirilgan:",
+      "planHint": "Keyingi mavsum joriy mavsum tugashi bilan boshlanadi. Rejalashtirilmasa, xuddi shu davomiylik bilan avtomatik boshlanadi.",
+      "planNext": "Keyingi mavsumni rejalashtirish",
+      "saveLength": "Saqlash",
+      "length": "Davomiyligi",
+      "months": "{count} oy",
+      "saved": "Saqlandi",
+      "finished": "Yakunlangan",
+      "weekly": "Haftalik bonus mavzusi",
+      "weeklyHint": "Tanlangan kurs mashqlari uchun XP shu hafta ikki baravar beriladi. Tanlanmagan haftalarda kurslar navbat bilan avtomatik tanlanadi.",
+      "pickTopic": "Mavzuni tanlash",
+      "auto": "Avtomatik (navbat bilan)",
+      "autoShort": "avtomatik",
+      "thisWeek": "shu hafta"
+    },
+    "promos": {
+      "subtitle": "Tariflar uchun chegirma kodlari. Har bir foydalanuvchi kodni bir marta ishlata oladi.",
+      "new": "Yangi promokod",
+      "code": "Kod",
+      "codeHint": "Lotin harflari va raqamlar, 3–24 ta belgi",
+      "random": "Tasodifiy kod",
+      "percent": "Chegirma, %",
+      "plan": "Tarif",
+      "anyPlan": "Istalgan tarif",
+      "maxUses": "Necha marta",
+      "unlimited": "cheksiz",
+      "lastDay": "Oxirgi kun",
+      "note": "Izoh",
+      "notePlaceholder": "Masalan: Telegram kanal aksiyasi",
+      "create": "Yaratish",
+      "created": "{code} yaratildi",
+      "empty": "Hali promokodlar yoʻq.",
+      "used": "Ishlatilgan",
+      "usedUp": "limit tugagan",
+      "expired": "muddati tugagan",
+      "revenue": "Tushum",
+      "discountGiven": "{count} ta toʻlov · chegirma {amount} soʻm",
+      "active": "Faol",
+      "partner": "Hamkor",
+      "noPartner": "Hamkorsiz"
+    },
+    "partners": {
+      "subtitle": "Bizni tavsiya qiladigan hamkorlar. Har birining oʻz havolasi bor: u orqali kirganlar 30 kun ichida roʻyxatdan oʻtsa, shu hamkorga yoziladi.",
+      "new": "Yangi hamkor",
+      "name": "Ism yoki kanal nomi",
+      "code": "Havola kodi",
+      "codeChangeHint": "Kod oʻzgarsa, eski havola ishlamay qoladi.",
+      "contact": "Aloqa",
+      "contactPlaceholder": "Telegram yoki telefon",
+      "note": "Izoh",
+      "create": "Qoʻshish",
+      "save": "Saqlash",
+      "cancel": "Bekor qilish",
+      "created": "{name} qoʻshildi",
+      "saved": "Saqlandi",
+      "empty": "Hali hamkorlar yoʻq.",
+      "off": "Oʻchirilgan",
+      "clicks": "Havola ochilgan",
+      "signups": "Roʻyxatdan oʻtgan",
+      "rate": "{percent}%",
+      "payers": "Toʻlov qilgan",
+      "revenue": "Tushum",
+      "copy": "Havoladan nusxa olish",
+      "edit": "Tahrirlash",
+      "active": "Faol",
+      "seeUsers": "{count} ta foydalanuvchini koʻrish",
+      "promoCodes": "Promokodlari"
+    },
+    "guestIq": {
+      "subtitle": "Roʻyxatdan oʻtmasdan topshirilgan IQ testlar. Toʻlov chekini Telegramda olgach, kod boʻyicha toping va tasdiqlang. Jami tushum: {amount} soʻm.",
+      "tabs": {
+        "waiting": "Toʻlov kutilmoqda",
+        "paid": "Toʻlangan",
+        "all": "Hammasi"
+      },
+      "search": "Kod, telefon yoki ism…",
+      "empty": "Hech narsa topilmadi.",
+      "age": "{age} yosh",
+      "result": "IQ {iq} · {correct}/{total} toʻgʻri",
+      "unfinished": "Tugatilmagan: {answered}/{total}",
+      "paidAt": "Toʻlangan: {date} · {amount} soʻm",
+      "partner": "Hamkor: {name}",
+      "referredBy": "{code} havolasi orqali kelgan",
+      "brought": "{count} kishini olib kelgan",
+      "markPaid": "Toʻlov qabul qilindi",
+      "confirmTitle": "{name} toʻlovi tasdiqlansinmi?",
+      "confirmText": "Tasdiqlangach, uning sahifasida natija va sertifikat ochiladi.",
+      "confirm": "Tasdiqlash",
+      "confirmBonusTitle": "{name} natijasi bepul ochilsinmi?",
+      "confirmBonusText": "Bu daromad statistikasiga qoʻshilmaydi.",
+      "confirmBonus": "Ochish",
+      "markBonus": "Bonus (bepul)",
+      "markedPaid": "Tasdiqlandi — sertifikat ochildi",
+      "markedUnpaid": "Toʻlov bekor qilindi",
+      "copyLink": "Havola",
+      "copyMessage": "Telegram xabari",
+      "open": "Sertifikat",
+      "undo": "Bekor qilish",
+      "message": "Salom, {name}! Toʻlovingiz tasdiqlandi. IQ sertifikatingiz shu yerda: {url}\nSahifadagi tugma orqali PDF qilib saqlashingiz va doʻstlaringizga ulashishingiz mumkin."
+    },
+    "settings": {
+      "subtitle": "Toʻlov rekvizitlari va narxlar. Saqlangach darhol saytda oʻzgaradi.",
+      "payment": "Toʻlov qabul qilish",
+      "paymentText": "Tarif va IQ test uchun toʻlovlar shu kartaga oʻtkaziladi; chek shu Telegramga yuboriladi.",
+      "cardNumber": "Karta raqami",
+      "cardNumberHint": "16 ta raqam",
+      "cardHolder": "Karta egasi",
+      "contact": "Telegram",
+      "contactHint": "@username yoki https://t.me/… havola",
+      "iq": "IQ test narxi",
+      "iqText": "Roʻyxatdan oʻtmasdan topshiriladigan IQ test natijasi va ilova ichidagi IQ sertifikati narxi.",
+      "iqPrice": "Narx, soʻm",
+      "iqOldPrice": "Chegirmadan oldingi narx, soʻm",
+      "iqOldPriceHint": "Ixtiyoriy. Toʻldirilsa, saytda ustiga chizilgan eski narx va chegirma foizi koʻrsatiladi.",
+      "iqPictureShare": "Rasmli savollar ulushi, %",
+      "iqPictureShareHint": "IQ testdagi savollarning qancha qismi rasmli (matritsa) boʻlsin. 100 — faqat rasmli, 0 — faqat matnli savollar.",
+      "preview": "Saytda koʻrinishi:",
+      "save": "Saqlash",
+      "saved": "Sozlamalar saqlandi",
+      "plans": "Tariflar narxi",
+      "plansText": "Pro va Diamond tariflarining bir oylik narxi. Yillik toʻlov chegirmasi shu narxlardan hisoblanadi. Kutilayotgan toʻlovlar summasi oʻzgarmaydi.",
+      "proPrice": "Pro — oyiga, soʻm",
+      "diamondPrice": "Diamond — oyiga, soʻm",
+      "annualDiscount": "Yillik toʻlov chegirmasi, %",
+      "annualDiscountHint": "0 dan 90 gacha. 0 — chegirmasiz.",
+      "planMonthly": "Oylik: {price} soʻm",
+      "planAnnual": "Yillik: {total} soʻm (oyiga {perMonth})",
+      "errors": {
+        "cardNumber": "Karta raqami 16 ta raqamdan iborat boʻlishi kerak",
+        "cardHolder": "Karta egasi nomi juda uzun",
+        "contact": "Telegram: @username yoki https://t.me/… koʻrinishida yozing",
+        "iqPriceUzs": "Narx 1 000 soʻmdan kam boʻlmasin",
+        "iqOldPriceUzs": "Eski narx yangi narxdan katta boʻlishi kerak",
+        "proPriceUzs": "Pro narxi 1 000 soʻmdan kam boʻlmasin",
+        "diamondPriceUzs": "Diamond narxi 1 000 soʻmdan kam boʻlmasin",
+        "annualDiscount": "Chegirma 0 dan 90 gacha butun son boʻlishi kerak",
+        "iqPictureShare": "Ulush 0 dan 100 gacha butun son boʻlishi kerak",
+        "invalid": "Maʼlumotlarni tekshiring"
+      }
+    }
+  },
+  "common": {
+    "retry": "Qayta urinish",
+    "endOfList": "Roʻyxat oxiri",
+    "loading": "Yuklanmoqda…",
+    "loadMore": "Yana yuklash",
+    "cancel": "Bekor qilish",
+    "wait": "Kuting…",
+    "close": "Yopish",
+    "soundOn": "Ovozni yoqish",
+    "soundOff": "Ovozni oʻchirish",
+    "priceSom": "{price} soʻm"
+  },
+  "weekly": {
+    "label": "Haftaning bonus mavzusi",
+    "endsIn": "{count} kun qoldi",
+    "title": "{track} — ikki baravar XP",
+    "text": "Shu hafta bu kurs mashqlari uchun XP ikki baravar. Kursni toʻliq tugatsangiz {xp} oʻrniga {double} XP.",
+    "cta": "Boshlash"
+  },
+  "season": {
+    "label": "Mavsum",
+    "name": "{number}-mavsum",
+    "daysLeft": "{count} kun qoldi",
+    "progress": "Mavsum jarayoni",
+    "hint": "Mavsum davomida toʻplagan har bir XP shu reytingda hisoblanadi. Mavsum oxirida yakuniy oʻrningiz eʼlon qilinadi, keyingi mavsum noldan boshlanadi."
+  },
+  "badgesPage": {
+    "title": "Nishonlar",
+    "subtitle": "{earned} / {total} ta nishon olingan",
+    "earned": "Olingan nishonlar",
+    "locked": "Hali olinmagan",
+    "none": "Hali nishon yoʻq — birinchi mashqni yechib, birinchisini oling!"
+  },
+  "chat": {
+    "title": "Xabarlar",
+    "subtitle": "Doʻstlaringiz va klaningiz bilan yozishmalar.",
+    "empty": "Hali yozishmalar yoʻq. Doʻstingiz profilida «Xabar yozish» tugmasini bosing.",
+    "toFriends": "Doʻstlarga oʻtish",
+    "you": "Siz",
+    "clanBadge": "Klan",
+    "clanEmpty": "Klan chati — birinchi boʻlib yozing",
+    "write": "Xabar yozish",
+    "back": "Orqaga",
+    "members": "{count} ta aʼzo",
+    "older": "Avvalgi xabarlar",
+    "emptyConversation": "Hali xabar yoʻq — salom deb yozing 👋",
+    "placeholder": "Xabar yozing…",
+    "send": "Yuborish",
+    "cannotSend": "Siz endi doʻst emassiz — yangi xabar yozib boʻlmaydi.",
+    "errors": {
+      "empty": "Boʻsh xabar yuborib boʻlmaydi",
+      "tooLong": "Xabar juda uzun (koʻpi bilan 1000 ta belgi)",
+      "forbidden": "Bu suhbatga yozib boʻlmaydi",
+      "tooMany": "Juda tez yozyapsiz — biroz kuting",
+      "network": "Xabar yuborilmadi — internetni tekshirib, qayta urining"
+    }
+  },
+  "duels": {
+    "title": "Duellar",
+    "subtitle": "1 ga 1: bir xil savollar, kim koʻp va tez topsa — XP oʻshaniki.",
+    "new": "Yangi duel",
+    "newSubtitle": "Raqib va mavzuni tanlang. Ikkingiz ham bir xil {questions} ta savolga javob berasiz.",
+    "empty": "Hali duel yoʻq. Doʻstingizni chaqiring!",
+    "all": "Barcha duellar",
+    "you": "Siz",
+    "level": "{level}-daraja",
+    "winXp": "Gʻalaba: +{xp} XP",
+    "loseXp": "Magʻlubiyat: −{xp} XP",
+    "stakeShort": "{xp} XP",
+    "opponent": "Raqib",
+    "noOpponents": "Avval doʻst qoʻshing yoki biror profildagi «Duelga chaqirish» tugmasini bosing.",
+    "topic": "Mavzu",
+    "stake": "Tikiladigan XP",
+    "stakeHint": "Sizda {xp} XP bor — undan koʻp tikib boʻlmaydi.",
+    "challenge": "Duelga chaqirish",
+    "rules": "{questions} ta savol, har biriga {seconds} soniya. Koʻproq toʻgʻri javob bergan yutadi; teng boʻlsa — tezroq javob bergan. Boshlagach, toʻxtatib boʻlmaydi.",
+    "start": "Duelni boshlash",
+    "go": "Ketdik!",
+    "question": "Savol {n} / {total}",
+    "answer": "Javob berish",
+    "next": "Keyingi savol",
+    "finish": "Yakunlash",
+    "correct": "Toʻgʻri!",
+    "wrong": "Notoʻgʻri",
+    "late": "Vaqt tugadi",
+    "score": "{correct} / {answered} toʻgʻri",
+    "inviteText": "{username} sizni duelga chaqirdi. Taklif {deadline} tugaydi.",
+    "accept": "Qabul qilish",
+    "decline": "Rad etish",
+    "declineConfirm": "{username}ning duelini rad etasizmi?",
+    "yourScore": "Natijangiz: {correct} / {total}",
+    "waitingAccept": "{username} taklifni qabul qilishini kutyapmiz ({deadline} tugaydi).",
+    "waitingPlay": "{username} oʻynashini kutyapmiz. Muddat {deadline} tugaydi — oʻynamasa, siz yutasiz.",
+    "results": {
+      "win": "Gʻalaba!",
+      "lose": "Magʻlubiyat",
+      "draw": "Durrang"
+    },
+    "xpChange": "XP oʻzgarishi: {xp}",
+    "drawText": "Natijalar teng — hech kim XP yoʻqotmadi.",
+    "time": "{seconds} soniya",
+    "rematch": "Revansh",
+    "declinedTitle": "Duel rad etildi",
+    "expiredTitle": "Duel muddati tugadi",
+    "noXp": "XP oʻzgarmadi.",
+    "groups": {
+      "invites": "Sizga takliflar",
+      "yourTurn": "Sizning navbatingiz",
+      "waiting": "Raqib kutilmoqda",
+      "history": "Tarix"
+    },
+    "badges": {
+      "invites": "Taklif",
+      "yourTurn": "Oʻynash",
+      "waiting": "Kutilmoqda"
+    },
+    "statuses": {
+      "DECLINED": "Rad etilgan",
+      "EXPIRED": "Muddati tugagan",
+      "DONE": "Tugagan"
+    },
+    "errors": {
+      "notFound": "Topilmadi",
+      "self": "Oʻzingizni chaqirib boʻlmaydi",
+      "notEnoughXp": "Bu duel uchun XP yetarli emas",
+      "opponentNotEnoughXp": "Raqibda bu miqdorda XP yoʻq — kamroq tiking",
+      "alreadyOpen": "Bu raqib bilan ochiq duel bor",
+      "noQuestions": "Bu mavzuda savollar yetarli emas",
+      "tooMany": "Bugun juda koʻp duel yaratdingiz",
+      "forbidden": "Bu amalni bajarib boʻlmaydi",
+      "expired": "Duel muddati tugagan",
+      "late": "Vaqt tugadi"
+    }
+  },
+  "guestIq": {
+    "metaTitle": "IQ test — roʻyxatdan oʻtmasdan",
+    "metaDescription": "20 ta mantiqiy savol, qiyinchilikka qarab 1-2 daqiqa. Testni bepul yeching, natija va IQ sertifikatini oling.",
+    "title": "IQ test",
+    "text": "Mantiqiy fikrlash darajangizni sinab koʻring. Roʻyxatdan oʻtish shart emas — maʼlumotlaringizni kiriting va boshlang.",
+    "priceNote": "Test bepul. Natijangiz va IQ sertifikati pullik: test oxirida toʻlov qilasiz, tasdiqlangach ular ochiladi. Narxi — <price></price>",
+    "firstName": "Ism",
+    "lastName": "Familiya",
+    "age": "Yosh",
+    "phone": "Telefon raqami",
+    "start": "Testni boshlash",
+    "starting": "Kuting…",
+    "errors": {
+      "required": "Bu maydon toʻldirilishi shart",
+      "nameShort": "Kamida 2 ta harf",
+      "nameLong": "Juda uzun",
+      "nameLetters": "Faqat harflar",
+      "ageInvalid": "Yoshingizni kiriting (6–99)",
+      "invalidPhone": "Telefon raqami notoʻgʻri. Masalan: +998 90 123 45 67",
+      "tooMany": "Juda koʻp urinish. Birozdan soʻng qayta urinib koʻring.",
+      "noQuestions": "Hozircha savollar yoʻq. Keyinroq urinib koʻring.",
+      "closed": "IQ test asosiy saytda: zukkolar.uz/iq-test"
+    },
+    "pay": {
+      "title": "Test yakunlandi, {name}!",
+      "locked": "Natija toʻlovdan soʻng ochiladi",
+      "text": "Natijangiz tayyor. Uni va IQ sertifikatini ochish uchun toʻlov qiling:",
+      "step1": "{price} soʻmni shu kartaga oʻtkazing",
+      "step2": "Toʻlov chekini Telegram orqali yuboring",
+      "codeHint": "Xabarda shu kodni yozing — toʻlovingizni shu orqali topamiz:",
+      "telegram": "Telegramda yozish",
+      "telegramMessage": "Salom! IQ test uchun toʻlov qildim.\nKod: {code}\nIsm: {name}\n(chekni shu yerga yuboraman)",
+      "contact": "Aloqa: {contact}",
+      "cardMissing": "Karta raqami hali sozlanmagan. Toʻlov uchun yozing: {contact}",
+      "step3": "Tasdiqlangach, natija va sertifikat shu sahifada ochiladi",
+      "keepLink": "Sahifa oʻzi yangilanadi. Havolani saqlab qoʻying — sertifikatingiz shu manzilda boʻladi (uni Telegram orqali ham yuboramiz):",
+      "copy": "Nusxa olish"
+    },
+    "certificate": {
+      "correct": "Toʻgʻri javoblar",
+      "number": "Sertifikat № {code}"
+    },
+    "share": {
+      "title": "Natijangizni ulashing",
+      "text": "Doʻstlaringizga yuboring yoki storiga joylang — ular ham sizning havolangiz orqali testni topshirishi mumkin.",
+      "telegram": "Telegramda yuborish",
+      "story": "Storiga joylash",
+      "preparing": "Tayyorlanmoqda…",
+      "download": "Stori rasmini yuklab olish",
+      "link": "Sizning havolangiz",
+      "copy": "Nusxa olish",
+      "referrals": "Havolangiz orqali {count} kishi testni boshladi",
+      "linkCopied": "Havolangiz nusxalandi — storida «Havola» stikeriga qoʻying",
+      "downloaded": "Rasm yuklab olindi. Uni Instagram yoki Telegram storiga joylang; havolangiz rasmda va QR kodda bor.",
+      "failed": "Ulashib boʻlmadi. Rasmni yuklab olib koʻring.",
+      "message": "Men Zukkolar IQ testidan {iq} ball oldim — odamlarning {percentile} foizidan yuqori! 🧠 Sen ham sinab koʻr:",
+      "takeTest": "Men ham test topshiraman",
+      "previewTitle": "{name} — IQ {iq}",
+      "previewText": "Zukkolar IQ testi natijasi. Siz ham sinab koʻring: 20 ta savol, roʻyxatdan oʻtish shart emas.",
+      "imageTitle": "IQ test natijasi",
+      "imageLabel": "Zukko IQ",
+      "imagePercentile": "{percentile}% dan yuqori",
+      "imageInvite": "Sen ham sinab koʻr!"
+    }
+  },
+  "chess": {
+    "board": "Shaxmat taxtasi",
+    "white": "oq",
+    "black": "qora",
+    "pieces": {
+      "K": "shoh",
+      "Q": "vazir",
+      "R": "tura",
+      "B": "fil",
+      "N": "ot",
+      "P": "piyoda"
+    },
+    "whiteToMove": "Oqlar yuradi — donani bosing yoki suring",
+    "blackToMove": "Qoralar yuradi — donani bosing yoki suring",
+    "made": "Yurish qilindi",
+    "takeBack": "Qaytarish",
+    "promote": "Piyoda qaysi donaga aylansin?",
+    "answer": "Toʻgʻri yurish: {move}"
+  },
+  "time": {
+    "now": "hozirgina",
+    "minutes": "{count} daqiqa oldin",
+    "hours": "{count} soat oldin",
+    "days": "{count} kun oldin",
+    "date": "{day}-{month}",
+    "months": {
+      "0": "yanvar",
+      "1": "fevral",
+      "2": "mart",
+      "3": "aprel",
+      "4": "may",
+      "5": "iyun",
+      "6": "iyul",
+      "7": "avgust",
+      "8": "sentabr",
+      "9": "oktabr",
+      "10": "noyabr",
+      "11": "dekabr"
+    }
+  },
+  "certificate": {
+    "title": "Sertifikat",
+    "subtitle": "IQ test natijasi",
+    "presented": "Ushbu sertifikat taqdim etiladi",
+    "body": "{site} IQ testida {iq} ball natija koʻrsatgani uchun.\nBu natija odamlarning {percentile} foizidan yuqori.",
+    "date": "{day}-{month}, {year}-yil",
+    "dateLabel": "Sana",
+    "numberLabel": "Sertifikat raqami",
+    "userLabel": "Foydalanuvchi",
+    "scan": "Haqiqiyligini tekshirish:",
+    "disclaimer": "Zukko IQ — mantiqiy fikrlash boʻyicha taxminiy baho. Bu klinik IQ test emas.",
+    "alt": "{name} — IQ sertifikati, {iq} ball",
+    "downloadPdf": "PDF yuklab olish",
+    "downloadPng": "Rasm sifatida saqlash",
+    "proofHint": "Sertifikatdagi QR kod shu sahifani ochadi:",
+    "proof": {
+      "metaTitle": "Sertifikatni tekshirish",
+      "title": "Sertifikat haqiqiy",
+      "text": "Bu sertifikat {site} tomonidan berilgan. Qoʻlingizdagi sertifikatni quyidagi maʼlumotlar bilan solishtiring.",
+      "name": "Kimga berilgan",
+      "iq": "Zukko IQ",
+      "percentile": "Natija",
+      "percentileValue": "odamlarning {percentile} foizidan yuqori",
+      "date": "Sana",
+      "live": "Zukko IQ har bir yangi test bilan yangilanadi — bu yerda hozirgi natija koʻrsatilgan.",
+      "cta": "Men ham test topshiraman",
+      "notFoundTitle": "Sertifikat topilmadi",
+      "notFoundText": "Bunday raqamli sertifikat yoʻq. QR kodni qayta skanerlang yoki raqamni tekshiring.",
+      "tooManyTitle": "Juda koʻp soʻrov",
+      "tooManyText": "Birozdan soʻng qayta urinib koʻring."
+    }
+  }
+}
