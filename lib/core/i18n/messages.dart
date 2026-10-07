@@ -11,14 +11,13 @@ class Messages {
   static Messages instance = Messages(const {});
 
   static Future<void> load() async {
-    final web =
-        jsonDecode(await rootBundle.loadString('assets/i18n/uz.json'))
-            as Map<String, dynamic>;
-    final mobile =
-        jsonDecode(await rootBundle.loadString('assets/i18n/uz.mobile.json'))
-            as Map<String, dynamic>;
+    final web = jsonDecode(await rootBundle.loadString('assets/i18n/uz.json')) as Map<String, dynamic>;
+    final mobile = jsonDecode(await rootBundle.loadString('assets/i18n/uz.mobile.json')) as Map<String, dynamic>;
     instance = Messages({...web, ...mobile});
   }
+
+  /// Is there a text under this key?
+  bool has(String key) => translate(key) != key;
 
   /// `translate("auth.errors.required")`, `translate("nav.levelXp", {"level": 3, "xp": 120})`.
   /// Unknown keys come back as the key itself, like next-intl does in development.
@@ -29,12 +28,8 @@ class Messages {
     }
     if (node is! String) return key;
     if (args.isEmpty) return node;
-    return node.replaceAllMapped(
-      RegExp(r'\{(\w+)\}'),
-      (m) => args.containsKey(m[1]) ? '${args[m[1]]}' : m[0]!,
-    );
+    return node.replaceAllMapped(RegExp(r'\{(\w+)\}'), (m) => args.containsKey(m[1]) ? '${args[m[1]]}' : m[0]!);
   }
 }
 
-String t(String key, [Map<String, Object?> args = const {}]) =>
-    Messages.instance.translate(key, args);
+String t(String key, [Map<String, Object?> args = const {}]) => Messages.instance.translate(key, args);

@@ -15,6 +15,7 @@ class User {
     this.gender,
     this.planExpiresAt,
     this.mustChangePassword = false,
+    this.chessElo = 800,
   });
 
   factory User.fromJson(Map<String, dynamic> json) => User(
@@ -26,10 +27,9 @@ class User {
     level: (json['level'] as num).toInt(),
     xp: (json['xp'] as num).toInt(),
     plan: json['plan'] as String? ?? 'FREE',
-    planExpiresAt: json['planExpiresAt'] == null
-        ? null
-        : DateTime.parse(json['planExpiresAt'] as String),
+    planExpiresAt: json['planExpiresAt'] == null ? null : DateTime.parse(json['planExpiresAt'] as String),
     mustChangePassword: json['mustChangePassword'] as bool? ?? false,
+    chessElo: (json['chessElo'] as num?)?.toInt() ?? 800,
   );
 
   final String id;
@@ -46,6 +46,9 @@ class User {
   final String plan;
   final DateTime? planExpiresAt;
   final bool mustChangePassword;
+
+  /// Rating from games against the chess bots.
+  final int chessElo;
 }
 
 /// Who is signed in: null when nobody is. Loading while the saved session is checked at launch.
@@ -57,9 +60,7 @@ class AuthController extends AsyncNotifier<User?> {
   Future<User?> build() async {
     if (await _tokens.read() == null) return null;
     try {
-      return User.fromJson(
-        (await _api.get('/me'))['user'] as Map<String, dynamic>,
-      );
+      return User.fromJson((await _api.get('/me'))['user'] as Map<String, dynamic>);
     } on ApiException catch (e) {
       // Revoked, expired or blocked → back to the login screen. Anything else (offline…) is shown with a retry.
       if (!e.isUnauthorized) rethrow;
@@ -69,22 +70,10 @@ class AuthController extends AsyncNotifier<User?> {
   }
 
   /// Throws [ApiException] with the same error keys as the web form (`auth.errors.*`).
-  Future<void> login({required String identifier, required String password}) =>
-      _signIn('/auth/login', {'identifier': identifier, 'password': password});
+  Future<void> login({required String identifier, required String password}) => _signIn('/auth/login', {'identifier': identifier, 'password': password});
 
-  Future<void> register({
-    required String gender,
-    required String phone,
-    required String username,
-    required String password,
-    String ref = '',
-  }) => _signIn('/auth/register', {
-    'gender': gender,
-    'phone': phone,
-    'username': username,
-    'password': password,
-    'ref': ref,
-  });
+  Future<void> register({required String gender, required String phone, required String username, required String password, String ref = ''}) =>
+      _signIn('/auth/register', {'gender': gender, 'phone': phone, 'username': username, 'password': password, 'ref': ref});
 
   Future<void> _signIn(String path, Map<String, dynamic> body) async {
     final data = await _api.post(path, body);
@@ -104,6 +93,4 @@ class AuthController extends AsyncNotifier<User?> {
   }
 }
 
-final authControllerProvider = AsyncNotifierProvider<AuthController, User?>(
-  AuthController.new,
-);
+final authControllerProvider = AsyncNotifierProvider<AuthController, User?>(AuthController.new);

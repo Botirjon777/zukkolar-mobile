@@ -10,10 +10,7 @@ abstract final class AppFonts {
 
 /// Tailwind's type scale (size / line height), so screens can be ported class by class.
 abstract final class AppText {
-  static const _base = TextStyle(
-    fontFamily: AppFonts.sans,
-    color: AppColors.foreground,
-  );
+  static const _base = TextStyle(fontFamily: AppFonts.sans, color: AppColors.foreground);
 
   /// `text-[10px]` / `text-[11px]` — badges and tab labels.
   static final tiny = _base.copyWith(fontSize: 10, height: 1.2);
@@ -27,15 +24,8 @@ abstract final class AppText {
   static final xl3 = _base.copyWith(fontSize: 30, height: 36 / 30);
 
   /// `h1`–`h3`: display font, `letter-spacing: -0.01em`. Pass `tight: true` for `tracking-tight`.
-  static TextStyle heading(
-    TextStyle size, {
-    FontWeight weight = FontWeight.w700,
-    bool tight = false,
-  }) => size.copyWith(
-    fontFamily: AppFonts.display,
-    fontWeight: weight,
-    letterSpacing: (size.fontSize ?? 16) * (tight ? -0.025 : -0.01),
-  );
+  static TextStyle heading(TextStyle size, {FontWeight weight = FontWeight.w700, bool tight = false}) =>
+      size.copyWith(fontFamily: AppFonts.display, fontWeight: weight, letterSpacing: (size.fontSize ?? 16) * (tight ? -0.025 : -0.01));
 }
 
 ThemeData buildAppTheme() {
@@ -57,11 +47,7 @@ ThemeData buildAppTheme() {
     scaffoldBackgroundColor: Colors.transparent,
     splashFactory: NoSplash.splashFactory,
     highlightColor: Colors.transparent,
-    textTheme: TextTheme(
-      bodyLarge: AppText.base,
-      bodyMedium: AppText.sm,
-      bodySmall: AppText.xs,
-    ),
+    textTheme: TextTheme(bodyLarge: AppText.base, bodyMedium: AppText.sm, bodySmall: AppText.xs),
     textSelectionTheme: TextSelectionThemeData(
       cursorColor: AppColors.brand,
       selectionColor: AppColors.brand.withValues(alpha: 0.2),

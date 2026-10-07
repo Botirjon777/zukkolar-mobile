@@ -10,6 +10,8 @@ import 'core/widgets/logo.dart';
 import 'features/auth/auth.dart';
 import 'features/auth/login_screen.dart';
 import 'features/auth/register_screen.dart';
+import 'features/chess/chess_game_screen.dart';
+import 'features/chess/chess_lobby_screen.dart';
 import 'features/shell/app_shell.dart';
 
 /// Routes mirror the web app's paths (`/login`, `/dashboard`, `/learn`, …) so links can be shared later.
@@ -38,20 +40,24 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(path: '/login', builder: (_, _) => const LoginScreen()),
       GoRoute(
         path: '/register',
-        builder: (_, state) =>
-            RegisterScreen(referralCode: state.uri.queryParameters['ref']),
+        builder: (_, state) => RegisterScreen(referralCode: state.uri.queryParameters['ref']),
+      ),
+      // Opened over the tabs, like the web's focus layout.
+      GoRoute(path: '/chess', builder: (_, _) => const ChessLobbyScreen()),
+      GoRoute(
+        path: '/chess/:id',
+        // key: "play again" opens another game on this same route.
+        builder: (_, state) => ChessGameScreen(key: ValueKey(state.pathParameters['id']), gameId: state.pathParameters['id']!),
       ),
       StatefulShellRoute.indexedStack(
-        builder: (_, _, navigationShell) =>
-            AppShell(navigationShell: navigationShell),
+        builder: (_, _, navigationShell) => AppShell(navigationShell: navigationShell),
         branches: [
           for (final tab in AppShell.tabs)
             StatefulShellBranch(
               routes: [
                 GoRoute(
                   path: '/${tab.key}',
-                  builder: (_, _) =>
-                      ComingSoonScreen(title: t('nav.${tab.key}')),
+                  builder: (_, _) => ComingSoonScreen(title: t('nav.${tab.key}')),
                 ),
               ],
             ),
@@ -71,8 +77,7 @@ class ZukkolarApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       theme: buildAppTheme(),
       routerConfig: ref.watch(routerProvider),
-      builder: (context, child) =>
-          AppBackground(child: child ?? const SizedBox.shrink()),
+      builder: (context, child) => AppBackground(child: child ?? const SizedBox.shrink()),
     );
   }
 }
@@ -102,19 +107,9 @@ class LaunchScreen extends ConsumerWidget {
                   style: AppText.sm.copyWith(color: AppColors.muted),
                 ),
                 const SizedBox(height: 16),
-                AppButton(
-                  label: t('common.retry'),
-                  expand: false,
-                  onPressed: () => ref.invalidate(authControllerProvider),
-                ),
+                AppButton(label: t('common.retry'), expand: false, onPressed: () => ref.invalidate(authControllerProvider)),
               ] else
-                const SizedBox.square(
-                  dimension: 24,
-                  child: CircularProgressIndicator(
-                    strokeWidth: 2.5,
-                    color: AppColors.brand,
-                  ),
-                ),
+                const SizedBox.square(dimension: 24, child: CircularProgressIndicator(strokeWidth: 2.5, color: AppColors.brand)),
             ],
           ),
         ),

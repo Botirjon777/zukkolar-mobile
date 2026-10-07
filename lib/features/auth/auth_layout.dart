@@ -8,12 +8,7 @@ import '../../core/widgets/logo.dart';
 
 /// The frame around login / register (`(auth)/layout.tsx`): logo, then the form in a white card.
 class AuthLayout extends StatelessWidget {
-  const AuthLayout({
-    super.key,
-    required this.title,
-    required this.subtitle,
-    required this.children,
-  });
+  const AuthLayout({super.key, required this.title, required this.subtitle, required this.children});
 
   final String title;
   final String subtitle;
@@ -28,9 +23,7 @@ class AuthLayout extends StatelessWidget {
             keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
             child: ConstrainedBox(
-              constraints: BoxConstraints(
-                minHeight: constraints.maxHeight - 80,
-              ),
+              constraints: BoxConstraints(minHeight: constraints.maxHeight - 80),
               child: Center(
                 child: ConstrainedBox(
                   constraints: const BoxConstraints(maxWidth: 384),
@@ -46,28 +39,15 @@ class AuthLayout extends StatelessWidget {
                           color: AppColors.surface,
                           borderRadius: BorderRadius.circular(24),
                           border: Border.all(color: AppColors.border),
-                          boxShadow: AppShadows.xl(
-                            AppColors.brand.withValues(alpha: 0.05),
-                          ),
+                          boxShadow: AppShadows.xl(AppColors.brand.withValues(alpha: 0.05)),
                         ),
                         child: AutofillGroup(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
-                                title,
-                                style: AppText.heading(
-                                  AppText.xl2,
-                                  tight: true,
-                                ),
-                              ),
+                              Text(title, style: AppText.heading(AppText.xl2, tight: true)),
                               const SizedBox(height: 6),
-                              Text(
-                                subtitle,
-                                style: AppText.sm.copyWith(
-                                  color: AppColors.muted,
-                                ),
-                              ),
+                              Text(subtitle, style: AppText.sm.copyWith(color: AppColors.muted)),
                               const SizedBox(height: 24),
                               ...children,
                             ],
@@ -88,12 +68,7 @@ class AuthLayout extends StatelessWidget {
 
 /// "No account? Sign up" under a form: muted text followed by a brand-coloured link.
 class AuthSwitchLink extends StatefulWidget {
-  const AuthSwitchLink({
-    super.key,
-    required this.text,
-    required this.link,
-    required this.onTap,
-  });
+  const AuthSwitchLink({super.key, required this.text, required this.link, required this.onTap});
 
   final String text;
   final String link;
@@ -121,10 +96,7 @@ class _AuthSwitchLinkState extends State<AuthSwitchLink> {
           children: [
             TextSpan(
               text: widget.link,
-              style: const TextStyle(
-                fontWeight: FontWeight.w600,
-                color: AppColors.brand,
-              ),
+              style: const TextStyle(fontWeight: FontWeight.w600, color: AppColors.brand),
               recognizer: _recognizer,
             ),
           ],

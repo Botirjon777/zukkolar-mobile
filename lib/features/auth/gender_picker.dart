@@ -6,15 +6,7 @@ import '../../core/widgets/avatar.dart';
 
 /// Two big cards with an avatar preview for each gender (`gender-picker.tsx`).
 class GenderPicker extends StatelessWidget {
-  const GenderPicker({
-    super.key,
-    required this.seed,
-    required this.value,
-    required this.onChanged,
-    required this.label,
-    this.hint,
-    this.error,
-  });
+  const GenderPicker({super.key, required this.seed, required this.value, required this.onChanged, required this.label, this.hint, this.error});
 
   /// Drives the preview; the backend picks the style a new account with this username would get.
   final String seed;
@@ -62,39 +54,20 @@ class GenderPicker extends StatelessWidget {
           duration: const Duration(milliseconds: 150),
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: active
-                ? Color.alphaBlend(
-                    AppColors.brand.withValues(alpha: 0.05),
-                    AppColors.surface,
-                  )
-                : AppColors.surface,
+            color: active ? Color.alphaBlend(AppColors.brand.withValues(alpha: 0.05), AppColors.surface) : AppColors.surface,
             borderRadius: BorderRadius.circular(16),
-            border: Border.all(
-              color: active ? AppColors.brand : AppColors.border,
-              width: 2,
-            ),
-            boxShadow: active
-                ? AppShadows.lg(AppColors.brand.withValues(alpha: 0.1))
-                : null,
+            border: Border.all(color: active ? AppColors.brand : AppColors.border, width: 2),
+            boxShadow: active ? AppShadows.lg(AppColors.brand.withValues(alpha: 0.1)) : null,
           ),
           child: Column(
             children: [
               // "auto": the style a new account with this username gets.
-              Avatar(
-                key: ValueKey('$seed|$gender'),
-                seed: seed,
-                style: 'auto',
-                gender: gender,
-                size: 64,
-              ),
+              Avatar(key: ValueKey('$seed|$gender'), seed: seed, style: 'auto', gender: gender, size: 64),
               const SizedBox(height: 8),
               Text(
                 text,
                 textAlign: TextAlign.center,
-                style: AppText.sm.copyWith(
-                  fontWeight: FontWeight.w600,
-                  color: active ? AppColors.brand : AppColors.foreground,
-                ),
+                style: AppText.sm.copyWith(fontWeight: FontWeight.w600, color: active ? AppColors.brand : AppColors.foreground),
               ),
             ],
           ),

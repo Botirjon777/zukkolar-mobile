@@ -40,7 +40,7 @@ dependencies:
   flutter_secure_storage: ^11.2.0
   lucide_icons_flutter: ^3.1.22
   flutter_svg: ^2.3.0
-
+  chess: ^0.8.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -63,6 +63,7 @@ flutter:
   assets:
     - assets/brand/
     - assets/i18n/
+    - assets/chess/pieces/
 
   # Same families as the web app (next/font: Onest, Unbounded, JetBrains Mono). Variable fonts, weight axis.
   fonts:

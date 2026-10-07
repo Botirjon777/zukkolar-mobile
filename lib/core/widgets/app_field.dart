@@ -61,17 +61,12 @@ class _AppFieldState extends State<AppField> {
   Widget build(BuildContext context) {
     final hasError = widget.error != null;
     final focused = _focus.hasFocus;
-    final borderColor = hasError
-        ? AppColors.danger
-        : (focused ? AppColors.brand : AppColors.border);
+    final borderColor = hasError ? AppColors.danger : (focused ? AppColors.brand : AppColors.border);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          widget.label,
-          style: AppText.sm.copyWith(fontWeight: FontWeight.w500),
-        ),
+        Text(widget.label, style: AppText.sm.copyWith(fontWeight: FontWeight.w500)),
         const SizedBox(height: 6),
         AnimatedContainer(
           duration: const Duration(milliseconds: 150),
@@ -82,13 +77,7 @@ class _AppFieldState extends State<AppField> {
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: borderColor),
             // focus:ring-4 focus:ring-brand/15
-            boxShadow: [
-              if (focused)
-                BoxShadow(
-                  color: AppColors.brand.withValues(alpha: 0.15),
-                  spreadRadius: 4,
-                ),
-            ],
+            boxShadow: [if (focused) BoxShadow(color: AppColors.brand.withValues(alpha: 0.15), spreadRadius: 4)],
           ),
           child: TextField(
             controller: widget.controller,
@@ -110,24 +99,16 @@ class _AppFieldState extends State<AppField> {
               border: InputBorder.none,
               contentPadding: const EdgeInsets.symmetric(horizontal: 14),
               hintText: widget.placeholder,
-              hintStyle: AppText.base.copyWith(
-                color: AppColors.muted.withValues(alpha: 0.6),
-              ),
+              hintStyle: AppText.base.copyWith(color: AppColors.muted.withValues(alpha: 0.6)),
             ),
           ),
         ),
         if (hasError) ...[
           const SizedBox(height: 6),
-          Text(
-            widget.error!,
-            style: AppText.sm.copyWith(color: AppColors.danger),
-          ),
+          Text(widget.error!, style: AppText.sm.copyWith(color: AppColors.danger)),
         ] else if (widget.hint != null) ...[
           const SizedBox(height: 6),
-          Text(
-            widget.hint!,
-            style: AppText.xs.copyWith(color: AppColors.muted),
-          ),
+          Text(widget.hint!, style: AppText.xs.copyWith(color: AppColors.muted)),
         ],
       ],
     );
@@ -147,14 +128,8 @@ class FormAlert extends StatelessWidget {
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-        decoration: BoxDecoration(
-          color: AppColors.danger.withValues(alpha: 0.1),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        child: Text(
-          message,
-          style: AppText.sm.copyWith(color: AppColors.danger),
-        ),
+        decoration: BoxDecoration(color: AppColors.danger.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(12)),
+        child: Text(message, style: AppText.sm.copyWith(color: AppColors.danger)),
       ),
     );
   }

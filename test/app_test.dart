@@ -14,9 +14,7 @@ void main() {
     expect(t('no.such.key'), 'no.such.key');
   });
 
-  testWidgets('signed out → login; empty form shows the required errors', (
-    tester,
-  ) async {
+  testWidgets('signed out → login; empty form shows the required errors', (tester) async {
     await pumpApp(tester);
     expect(find.byType(LoginScreen), findsOneWidget);
 
@@ -38,24 +36,25 @@ void main() {
     expect(find.text(t('auth.errors.passwordTooShort')), findsOneWidget);
   });
 
-  testWidgets(
-    'signed in → shell with the five tabs; logging out returns to login',
-    (tester) async {
-      await pumpApp(tester, user: testUser);
-      expect(find.byType(AppShell), findsOneWidget);
-      for (final tab in AppShell.tabs) {
-        expect(find.text(t('nav.${tab.key}')), findsWidgets);
-      }
+  testWidgets('signed in → shell with the five tabs; logging out returns to login', (tester) async {
+    await pumpApp(tester, user: testUser);
+    expect(find.byType(AppShell), findsOneWidget);
+    for (final tab in AppShell.tabs) {
+      expect(find.text(t('nav.${tab.key}')), findsWidgets);
+    }
 
-      await tester.tap(find.text(t('nav.learn')));
-      await tester.pumpAndSettle();
-      expect(find.text(t('mobile.comingSoon')), findsOneWidget);
+    await tester.tap(find.text(t('nav.learn')));
+    await tester.pumpAndSettle();
+    expect(find.text(t('mobile.comingSoon')), findsOneWidget);
 
-      await tester.tap(find.bySemanticsLabel(t('nav.profileMenu')));
-      await tester.pumpAndSettle();
-      await tester.tap(find.text(t('nav.logout')));
-      await tester.pumpAndSettle();
-      expect(find.byType(LoginScreen), findsOneWidget);
-    },
-  );
+    await tester.tap(find.bySemanticsLabel(t('nav.profileMenu')));
+    await tester.pumpAndSettle();
+    // The menu's own row, then the button of the question it asks.
+    await tester.tap(find.text(t('nav.logout')));
+    await tester.pumpAndSettle();
+    expect(find.text(t('nav.logoutConfirmTitle')), findsOneWidget);
+    await tester.tap(find.text(t('nav.logout')).last);
+    await tester.pumpAndSettle();
+    expect(find.byType(LoginScreen), findsOneWidget);
+  });
 }

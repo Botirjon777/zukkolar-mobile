@@ -36,10 +36,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     final identifier = _identifier.text.trim();
     final password = _password.text;
     // Same checks as loginSchema on the server, so an empty form doesn't need a round trip.
-    final missing = {
-      if (identifier.isEmpty) 'identifier': 'required',
-      if (password.isEmpty) 'password': 'required',
-    };
+    final missing = {if (identifier.isEmpty) 'identifier': 'required', if (password.isEmpty) 'password': 'required'};
     if (missing.isNotEmpty) {
       setState(() {
         _error = null;
@@ -56,9 +53,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     });
     try {
       // On success the router sees the signed-in user and moves to the dashboard.
-      await ref
-          .read(authControllerProvider.notifier)
-          .login(identifier: identifier, password: password);
+      await ref.read(authControllerProvider.notifier).login(identifier: identifier, password: password);
     } on ApiException catch (e) {
       if (!mounted) return;
       setState(() {
@@ -94,21 +89,11 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
           error: authFieldError(_fieldErrors, 'password'),
         ),
         const SizedBox(height: 24),
-        AppButton(
-          label: _pending ? t('auth.pending') : t('auth.submitLogin'),
-          onPressed: _pending ? null : _submit,
-        ),
+        AppButton(label: _pending ? t('auth.pending') : t('auth.submitLogin'), onPressed: _pending ? null : _submit),
         const SizedBox(height: 20),
-        Text(
-          t('auth.forgotPassword'),
-          style: AppText.xs.copyWith(color: AppColors.muted, height: 1.625),
-        ),
+        Text(t('auth.forgotPassword'), style: AppText.xs.copyWith(color: AppColors.muted, height: 1.625)),
         const SizedBox(height: 20),
-        AuthSwitchLink(
-          text: t('auth.noAccount'),
-          link: t('auth.submitRegister'),
-          onTap: () => context.go('/register'),
-        ),
+        AuthSwitchLink(text: t('auth.noAccount'), link: t('auth.submitRegister'), onTap: () => context.go('/register')),
       ],
     );
   }

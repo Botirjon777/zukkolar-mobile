@@ -9,8 +9,7 @@ class AppBackground extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) =>
-      CustomPaint(painter: const _BackgroundPainter(), child: child);
+  Widget build(BuildContext context) => CustomPaint(painter: const _BackgroundPainter(), child: child);
 }
 
 class _BackgroundPainter extends CustomPainter {
@@ -20,13 +19,7 @@ class _BackgroundPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     canvas.drawRect(Offset.zero & size, Paint()..color = AppColors.background);
     // radial-gradient(900px 500px at 100% -10%, brand-2 10%, transparent 70%)
-    _glow(
-      canvas,
-      Offset(size.width, -0.1 * size.height),
-      900,
-      500,
-      AppColors.brand2,
-    );
+    _glow(canvas, Offset(size.width, -0.1 * size.height), 900, 500, AppColors.brand2);
     // radial-gradient(800px 500px at -10% 0%, brand 10%, transparent 70%)
     _glow(canvas, Offset(-0.1 * size.width, 0), 800, 500, AppColors.brand);
   }

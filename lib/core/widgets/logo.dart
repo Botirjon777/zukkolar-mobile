@@ -9,13 +9,8 @@ class LogoMark extends StatelessWidget {
   final double size;
 
   @override
-  Widget build(BuildContext context) => Image.asset(
-    'assets/brand/logo-mark-192.webp',
-    width: size,
-    height: size,
-    filterQuality: FilterQuality.medium,
-    excludeFromSemantics: true,
-  );
+  Widget build(BuildContext context) =>
+      Image.asset('assets/brand/logo-mark-192.webp', width: size, height: size, filterQuality: FilterQuality.medium, excludeFromSemantics: true);
 }
 
 /// Emblem + name in the brand gradient.
@@ -44,21 +39,12 @@ class LogoFull extends StatelessWidget {
   final double width;
 
   @override
-  Widget build(BuildContext context) => Image.asset(
-    'assets/brand/logo-full-320.webp',
-    width: width,
-    semanticLabel: 'Zukkolar',
-  );
+  Widget build(BuildContext context) => Image.asset('assets/brand/logo-full-320.webp', width: width, semanticLabel: 'Zukkolar');
 }
 
 /// `text-grad-brand`: text filled with a gradient.
 class GradientText extends StatelessWidget {
-  const GradientText(
-    this.text, {
-    super.key,
-    required this.style,
-    this.gradient = AppGradients.brand,
-  });
+  const GradientText(this.text, {super.key, required this.style, this.gradient = AppGradients.brand});
 
   final String text;
   final TextStyle style;
@@ -68,8 +54,7 @@ class GradientText extends StatelessWidget {
   Widget build(BuildContext context) {
     return ShaderMask(
       blendMode: BlendMode.srcIn,
-      shaderCallback: (bounds) =>
-          gradient.createShader(Offset.zero & bounds.size),
+      shaderCallback: (bounds) => gradient.createShader(Offset.zero & bounds.size),
       child: Text(text, style: style.copyWith(color: Colors.white)),
     );
   }

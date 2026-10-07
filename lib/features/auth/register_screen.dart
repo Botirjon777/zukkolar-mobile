@@ -60,12 +60,8 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
     return {
       if (_gender == null) 'gender': 'genderRequired',
       if (_phone.text.trim().isEmpty) 'phone': 'required',
-      if (!RegExp(r'^[a-z0-9_]{3,20}$').hasMatch(username))
-        'username': 'usernameFormat',
-      if (password.length < 8)
-        'password': 'passwordTooShort'
-      else if (password.length > 128)
-        'password': 'passwordTooLong',
+      if (!RegExp(r'^[a-z0-9_]{3,20}$').hasMatch(username)) 'username': 'usernameFormat',
+      if (password.length < 8) 'password': 'passwordTooShort' else if (password.length > 128) 'password': 'passwordTooLong',
     };
   }
 
@@ -89,13 +85,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
     try {
       await ref
           .read(authControllerProvider.notifier)
-          .register(
-            gender: _gender!,
-            phone: _phone.text,
-            username: _username.text,
-            password: _password.text,
-            ref: _ref.text,
-          );
+          .register(gender: _gender!, phone: _phone.text, username: _username.text, password: _password.text, ref: _ref.text);
     } on ApiException catch (e) {
       if (!mounted) return;
       setState(() {
@@ -159,16 +149,9 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
           error: authFieldError(_fieldErrors, 'ref'),
         ),
         const SizedBox(height: 24),
-        AppButton(
-          label: _pending ? t('auth.pending') : t('auth.submitRegister'),
-          onPressed: _pending ? null : _submit,
-        ),
+        AppButton(label: _pending ? t('auth.pending') : t('auth.submitRegister'), onPressed: _pending ? null : _submit),
         const SizedBox(height: 20),
-        AuthSwitchLink(
-          text: t('auth.haveAccount'),
-          link: t('auth.submitLogin'),
-          onTap: () => context.go('/login'),
-        ),
+        AuthSwitchLink(text: t('auth.haveAccount'), link: t('auth.submitLogin'), onTap: () => context.go('/login')),
       ],
     );
   }

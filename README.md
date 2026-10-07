@@ -30,6 +30,7 @@ lib/core/api/       HTTP client, session token (Keychain / Keystore)
 lib/features/       one folder per feature, named like src/features in the web app
 assets/i18n/uz.json a copy of the web app's messages/uz.json — copy it again when the web text changes
 assets/brand/       logo; app-icon*.png and splash.png are cut from logo-source.png
+assets/chess/       the web app's piece pictures (see its README for their licence)
 ```
 
 Mobile-only strings go in `assets/i18n/uz.mobile.json`.

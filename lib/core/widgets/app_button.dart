@@ -6,14 +6,7 @@ enum AppButtonVariant { primary, secondary, ghost, danger, success }
 
 /// The web app's `Button` (`components/ui/button.tsx`): 44 px tall, rounded-xl, text-sm semibold.
 class AppButton extends StatefulWidget {
-  const AppButton({
-    super.key,
-    required this.label,
-    required this.onPressed,
-    this.variant = AppButtonVariant.primary,
-    this.icon,
-    this.expand = true,
-  });
+  const AppButton({super.key, required this.label, required this.onPressed, this.variant = AppButtonVariant.primary, this.icon, this.expand = true});
 
   final String label;
 
@@ -57,19 +50,13 @@ class _AppButtonState extends State<AppButton> {
               mainAxisSize: widget.expand ? MainAxisSize.max : MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                if (widget.icon != null) ...[
-                  Icon(widget.icon, size: 16, color: color),
-                  const SizedBox(width: 8),
-                ],
+                if (widget.icon != null) ...[Icon(widget.icon, size: 16, color: color), const SizedBox(width: 8)],
                 Flexible(
                   child: Text(
                     widget.label,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: AppText.sm.copyWith(
-                      fontWeight: FontWeight.w600,
-                      color: color,
-                    ),
+                    style: AppText.sm.copyWith(fontWeight: FontWeight.w600, color: color),
                   ),
                 ),
               ],
@@ -88,19 +75,13 @@ class _AppButtonState extends State<AppButton> {
           BoxDecoration(
             gradient: AppGradients.brand,
             borderRadius: radius,
-            boxShadow: AppShadows.lg(
-              AppColors.brand.withValues(alpha: pressed ? 0.3 : 0.25),
-            ),
+            boxShadow: AppShadows.lg(AppColors.brand.withValues(alpha: pressed ? 0.3 : 0.25)),
           ),
           AppColors.brandForeground,
         );
       case AppButtonVariant.success:
         return (
-          BoxDecoration(
-            gradient: AppGradients.success,
-            borderRadius: radius,
-            boxShadow: AppShadows.lg(AppColors.success.withValues(alpha: 0.25)),
-          ),
+          BoxDecoration(gradient: AppGradients.success, borderRadius: radius, boxShadow: AppShadows.lg(AppColors.success.withValues(alpha: 0.25))),
           Colors.white,
         );
       case AppButtonVariant.secondary:
@@ -108,22 +89,12 @@ class _AppButtonState extends State<AppButton> {
           BoxDecoration(
             color: pressed ? AppColors.background : AppColors.surface,
             borderRadius: radius,
-            border: Border.all(
-              color: pressed
-                  ? AppColors.brand.withValues(alpha: 0.4)
-                  : AppColors.border,
-            ),
+            border: Border.all(color: pressed ? AppColors.brand.withValues(alpha: 0.4) : AppColors.border),
           ),
           AppColors.foreground,
         );
       case AppButtonVariant.ghost:
-        return (
-          BoxDecoration(
-            color: pressed ? AppColors.surface : null,
-            borderRadius: radius,
-          ),
-          pressed ? AppColors.foreground : AppColors.muted,
-        );
+        return (BoxDecoration(color: pressed ? AppColors.surface : null, borderRadius: radius), pressed ? AppColors.foreground : AppColors.muted);
       case AppButtonVariant.danger:
         return (
           BoxDecoration(
